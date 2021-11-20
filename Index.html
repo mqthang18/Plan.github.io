@@ -107,7 +107,6 @@
         </div>
         <div class="right">
             <button type="button" class="collapsible">Bảng 2. Bảng tiêu chí (<a href="https://drive.google.com/file/d/156oDUzJpScjAnmZawYBh0BaUL5LCN1Bb/view?usp=sharing" target="_blank">Sơ đồ</a>)</button>
-            <!-- <h2>Bảng 2. Bảng tiêu chí (<a href="https://drive.google.com/file/d/156oDUzJpScjAnmZawYBh0BaUL5LCN1Bb/view?usp=sharing" target="_blank">Sơ đồ</a>)</h2> -->
             <div class="content">
                 <table>
                     <tr>
@@ -329,7 +328,8 @@
         <span style="font-size: 32px; font-weight: 900; text-decoration: underline;">Nội dung phỏng vấn</span>
             <p>* Shapefile được tạo bằng phương thức khảo sát thực tế dựa trên sự hướng dẫn của cán bộ (người dân) địa phương</p>
             <div class="question">
-                <span style="font-weight: 900;">Từ danh sách các nhân tố gây tiêu cực lên sinh cảnh RNM đưới đây hãy chọn ra những nhân tố thực tế đang diễn ra tại địa phương anh (chị)? <br> Và từ các tác nhân đã chọn anh (chị) hãy tạo một bản đồ (điểm, đường hoặc vùng) cung cấp phạm vi hoạt động của chúng bằng cách điền khoảng cách từ biên bản đồ đến nơi tối đa mà nhân tố có thể di chuyển tới?</span><br>
+                <p><span style="font-weight: 900;">Từ danh sách các nhân tố gây tiêu cực lên sinh cảnh RNM đưới đây hãy chọn ra những nhân tố thực tế đang diễn ra tại địa phương anh (chị)?</span></p>
+                Và từ các tác nhân đã chọn anh (chị) hãy tạo một bản đồ (điểm, đường hoặc vùng) cung cấp phạm vi hoạt động của chúng bằng cách điền khoảng cách từ biên bản đồ đến nơi tối đa mà nhân tố có thể di chuyển tới?
                 <ul style="list-style-type:none;">
                     <li>
                         <input type="checkbox" name="Factors" value="Khai thác cây rừng ngập mặn (bất hợp pháp)">Khai thác cây rừng ngập mặn (bất hợp pháp)<br>
@@ -348,8 +348,7 @@
             <br>
     
             <div id="questionaire"></div>
-    </div>
-   
+    </div>   
     <script>
         var res_arr = [];
         var dict_exposure = new Object; 
@@ -388,8 +387,6 @@
                 }
             }
             CreatQuestion()
-            // alert(res_arr)
-            // alert(res_arr.length);
         }
         
         // console.log(Object.keys(dict_exposure).length)
