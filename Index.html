@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionaire</title>
+    <style>
+        :root {
+            --w--leftcol: 50rem;
+        }
+        .html {
+            font-size: 62.5%;
+        }
+        .container {
+            display: flex;
+        }
+
+        .container > .left, .right {
+            width: var(--w--leftcol);
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            color: red;
+        }
+        .data {
+            width: 90vw;
+            text-align: justify;
+            margin: auto;
+        }
+        /* Style the button that is used to open and close the collapsible content */
+        .collapsible {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        }
+
+        /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+        .active, .collapsible:hover {
+        background-color: #ccc;
+        }
+
+        /* Style the collapsible content. Note: hidden by default */
+        .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Khảo sát các nguy cơ rủi ro tiềm ẩn đối với sinh cảnh rừng ngập mặn</h1>
+    <div class="container">
+        <div class="left">
+            <button type="button" class="collapsible">Bảng 1. Bảng thông tin sinh cảnh, nhân tố stress</button>
+            <!-- <h2>Bảng 1. Bảng thông tin sinh cảnh, nhân tố stress</h2> -->
+            <div class="content">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Path</th>
+                        <th>Type</th>
+                        <th>Stressor buffer (meters)</th>
+                    </tr>
+                    <tr>
+                        <td>Mangrove</td>
+                        <td>habitat_layers/Habitat.tif</td>
+                        <td>habitat</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A</td>
+                        <td>stressor_layers/A.shp</td>
+                        <td>tressor</td>
+                        <td>?</td>
+                    </tr>
+                    <tr>
+                        <td>B</td>
+                        <td>stressor_layers/B.shp</td>
+                        <td>tressor</td>
+                        <td>?</td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td>stressor_layers/C.shp</td>
+                        <td>tressor</td>
+                        <td>?</td>
+                    </tr>
+                </table>
+                <p>Cách tính stressor buffer?</p>
+                <p>"Spatial overlap" sẽ được tính dựa trên các dữ liệu về habitat maps, stressor maps, buffer distance và decay equation lựa chọn trong UI program theo công thức: <br> maximum_criteria_score * percentage_overlap + minimum_criteria_score * (1 - percentage_overlap)</p>
+            </div>
+        </div>
+        <div class="right">
+            <button type="button" class="collapsible">Bảng 2. Bảng tiêu chí (<a href="https://drive.google.com/file/d/156oDUzJpScjAnmZawYBh0BaUL5LCN1Bb/view?usp=sharing" target="_blank">Sơ đồ</a>)</button>
+            <!-- <h2>Bảng 2. Bảng tiêu chí (<a href="https://drive.google.com/file/d/156oDUzJpScjAnmZawYBh0BaUL5LCN1Bb/view?usp=sharing" target="_blank">Sơ đồ</a>)</h2> -->
+            <div class="content">
+                <table>
+                    <tr>
+                        <th>Habitat Name</th>
+                        <th colspan="3">Mangrove</th>
+                        <th>Criteria type</th>
+                    </tr>
+                    <tr>
+                        <td>Habitat resilience attributes</td>
+                        <td>Rating</td>
+                        <td>DQ</td>
+                        <td>Weight</td>
+                        <td>E/C</td>
+                    </tr>
+                    <tr>
+                        <td>recruitment rate</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>natural mortability rate</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>connectivity rate</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>recovery time</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5"><span style="visibility: hidden;">a</span></td>
+                    </tr>
+                    <tr>
+                        <td>Habitat stressor overlap properties</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A</td>
+                        <td>Rating</td>
+                        <td>DQ</td>
+                        <td>Weight</td>
+                        <td>E/C</td>
+                    </tr>
+                    <tr>
+                        <td>frequency of disturbance</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>change in area rating</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>change in structure rating</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>temporal overlap rating</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>E</td>
+                    </tr>
+                    <tr>
+                        <td>management effectiveness</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>E</td>
+                    </tr>
+                    <tr>
+                        <td>intensity rating</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>E</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5"><span style="visibility: hidden;">a</span></td>
+                    </tr>
+                    <tr>
+                        <td>B</td>
+                        <td>Rating</td>
+                        <td>DQ</td>
+                        <td>Weight</td>
+                        <td>E/C</td>
+                    </tr>
+                    <tr>
+                        <td>frequency of disturbance</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>change in area rating</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>change in structure rating</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>temporal overlap rating</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>E</td>
+                    </tr>
+                    <tr>
+                        <td>management effectiveness</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>E</td>
+                    </tr>
+                    <tr>
+                        <td>intensity rating</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>E</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5"><span style="visibility: hidden;">a</span></td>
+                    </tr>
+                    <tr>
+                        <td>Habitat stressor overlap properties</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td>Rating</td>
+                        <td>DQ</td>
+                        <td>Weight</td>
+                        <td>E/C</td>
+                    </tr>
+                    <tr>
+                        <td>frequency of disturbance</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>change in area rating</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>change in structure rating</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>temporal overlap rating</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>E</td>
+                    </tr>
+                    <tr>
+                        <td>management effectiveness</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>E</td>
+                    </tr>
+                    <tr>
+                        <td>intensity rating</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>E</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="data">
+        <p>Nguồn dữ liệu bản đồ sinh cảnh (Habitat map): <a href="https://www.eorc.jaxa.jp/ALOS/en/dataset/lulc_e.htm" target="_blank">Link</a></p>
+        <span style="font-size: 32px; font-weight: 900; text-decoration: underline;">Nội dung phỏng vấn</span>
+            <p>* Shapefile được tạo bằng phương thức khảo sát thực tế dựa trên sự hướng dẫn của cán bộ (người dân) địa phương</p>
+            <div class="question">
+                <span style="font-weight: 900;">Từ danh sách các nhân tố gây tiêu cực lên sinh cảnh RNM đưới đây hãy chọn ra những nhân tố thực tế đang diễn ra tại địa phương anh (chị)? <br> Và từ các tác nhân đã chọn anh (chị) hãy tạo một bản đồ (điểm, đường hoặc vùng) cung cấp phạm vi hoạt động của chúng bằng cách điền khoảng cách từ biên bản đồ đến nơi tối đa mà nhân tố có thể di chuyển tới?</span><br>
+                <ul style="list-style-type:none;">
+                    <li>
+                        <input type="checkbox" name="Factors" value="Khai thác cây rừng ngập mặn (bất hợp pháp)">Khai thác cây rừng ngập mặn (bất hợp pháp)<br>
+                        <input type="checkbox" name="Factors" value="Đánh bắt thủy hải sản trong rừng ngập mặn (Cá, cua, vọp, ba khía, tôm,...)">Đánh bắt thủy hải sản trong rừng ngập mặn (Cá, cua, vọp, ba khía, tôm,...)<br>
+                        <input type="checkbox" name="Factors" value="Thay đổi về sử dụng đất rừng ngập mặn (sang ao nuôi tôm, cá hợp pháp và bất hợp pháp)">Thay đổi về sử dụng đất rừng ngập mặn (sang ao nuôi tôm, cá hợp pháp và bất hợp pháp)<br>
+                        <input type="checkbox" name="Factors" value="Phát triển cơ sở hạ tầng (giao thông, đô thị,...)">Phát triển cơ sở hạ tầng (giao thông, đô thị,...)<br>
+                        <input type="checkbox" name="Factors" value="Ô nhiễm môi trường (túi nilong, hóa chất từ ao nuôi,..)">Ô nhiễm môi trường (túi nilong, hóa chất từ ao nuôi,..)<br>
+                        <input type="checkbox" name="Factors" value="Xói lở đất">Xói lở đất (tàu bè qua lại, do sóng biển...)<br>
+                        <input type="checkbox" name="Factors" value="Biến đổi khí hậu (mực nước biển tăng, nước quá mặn,...)">Biến đổi khí hậu (mực nước biển tăng, nước quá mặn,...)<br>
+                        <input type="checkbox" name="Factors" value="Một số dịch vụ du lịch sinh thái có liên quan">Một số dịch vụ du lịch sinh thái có liên quan<br>
+                        <input type="checkbox" name="Factors" value="Loài côn trùng vi sinh gây bệnh xâm lấn">Loài côn trùng vi sinh gây bệnh xâm lấn<br>
+                    </li>
+                </ul>
+                <button onclick="GetResponse()">Submit</button>
+            </div>
+            <br>
+    
+            <div id="questionaire"></div>
+    </div>
+   
+    <script>
+        var res_arr = [];
+        var dict_exposure = new Object; 
+        var dict_consequence_sensitivity = new Object;
+        var dict_consequence_resilience = new Object; 
+        dict_consequence_resilience = {
+            0: 'Khả năng phục hồi của rừng ngập mặn (Mangrove resilience)',
+            1: "Tại khu vực anh (chị), trụ mầm loài đước có khả năng khuếch tán trong rừng ngập mặn với khoảng cách trung bình bao nhiêu mét?",
+            2: "Các đợt bổ sung trụ mầm đước (theo cách tự nhiên hoặc theo các đợt trồng) đối với khu vực rừng ngập mặn thường cách nhau khoảng thời gian là bao lâu?",
+            3: "Để một khu vực rừng ngập mặn non trẻ phát triển trở thành rừng trưởng thành phải mất khoảng thời gian là bao lâu?",
+            4: "Số lượng cá thể đước tử vong tự nhiên trong rừng ngập mặn chiếm khoảng bao nhiêu phần trăm?"
+        }
+
+        dict_consequence_sensitivity = {
+            2: "Rừng ngập mặn tại khu vực chịu tác động của tác nhân ''TN'' thường tạo ra sự thay đổi như thế nào trong số lượng cá thể của sinh cảnh?",
+            1: "Rừng ngập mặn khi đối mặt tác nhân ''TN'' thường tạo ra sự thay đổi như thế nào trong phạm vi (diện tích) của sinh cảnh ?",
+            3: "Sinh cảnh rừng ngập mặn phải đối mặt với các xáo trộn do tự nhiên tác động có cơ chế tương tự với tác nhân ''TN'' có thường xuyên hay không?",
+        }
+
+        dict_exposure = {
+            // 1: "Không gian mà môi trường sống trùng lặp với tác nhân gây căng thẳng ''TN'' là bao nhiêu?",
+            1: "Rừng ngập mặn thường phải đối mặt với tác nhân ''TN'' xảy ra trong một năm trung bình khoảng bao nhiêu đợt?",
+            2: "Rừng ngập mặn thường phải đối mặt với tác nhân ''TN'' trong khoảng thời gian là bao lâu?",
+            3: "Các biện pháp quản lý tác nhân ''TN'' có hiệu quả như thế nào?"
+        }
+        function GetResponse() {
+            res_arr = []
+            var Factor = document.getElementsByName('Factors');
+  
+            let val = Array.from(Factor)
+            
+            for (var i = 0, length = Factor.length; i < length; i++) {
+                if (Factor[i].checked) {
+                    var a = Factor[i].value; 
+                    res_arr.push(a);
+                }
+            }
+            CreatQuestion()
+            // alert(res_arr)
+            // alert(res_arr.length);
+        }
+        
+        // console.log(Object.keys(dict_exposure).length)
+        function CreatQuestion() {
+            let element = document.getElementById("questionaire");
+            while (element.firstChild) {
+            element.removeChild(element.firstChild);
+            }
+            if(res_arr.length > 0) {
+                for (var i=0; i < Object.keys(dict_consequence_resilience).length; i++) {
+                    if (i==0) {
+                        Createlabel(dict_consequence_resilience[i])
+                    } else {
+                        myFunction(dict_consequence_resilience[i])
+                    }
+                }
+                for (var i=0; i < res_arr.length; i++) {
+                    Createlabel("Nhân tố - ".concat(res_arr[i]));
+                    var a = 2;
+                    for (var j = 0; j < Object.keys(dict_exposure).length + Object.keys(dict_consequence_sensitivity).length; j++) {
+                        // console.log(dict_exposure[j])
+                        var x = j+1
+                        if (x < 4) {
+                            if (x == 1) {
+                                createCategory("Tiêu chí phơi nhiễm (Exposure criteria)")
+                            }
+                            myFunction(dict_exposure[x].replace("'TN'", res_arr[i]))
+                        } else {
+                            if (j-a == 1) {
+                                createCategory("Tiêu chí hậu quả (Consequence criteria)")
+                            }
+                            myFunction(dict_consequence_sensitivity[j-a].replace("'TN'", res_arr[i]))
+                        }
+                        
+                    }
+                    // for (var k = 0; k < Object.keys(dict_consequence_sensitivity).length; k++) {
+                    //     myFunction(dict_consequence_sensitivity[k+1].replace("'TN'", res_arr[i]))
+                    // }
+                }
+            }
+        }
+
+        function myFunction(text) {
+            var string = text
+            var question = document.createElement("p");
+            question.innerText = string;
+            document.getElementById('questionaire').appendChild(question);
+        }
+
+        function Createlabel(text) {
+            var label = document.createElement("h2");
+            label.innerText = text;
+            document.getElementById('questionaire').appendChild(label);
+        }
+
+        function createCategory(text) {
+            var label = document.createElement("h3");
+            label.innerText = text;
+            document.getElementById('questionaire').appendChild(label);
+        }
+
+
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+            content.style.display = "none";
+            } else {
+            content.style.display = "block";
+            }
+        });
+        }
+    </script>
+</body>
+</html>
