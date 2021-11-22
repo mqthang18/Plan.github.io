@@ -474,6 +474,7 @@
                     }
                 }
                 CreatQuestion()
+                Animation()
             }
             
             // console.log(Object.keys(dict_exposure).length)
@@ -487,22 +488,24 @@
                 var idW;
                 var idDQ = "DQ"
                 var idW = "Weight"
+
                 if(res_arr.length > 0) {
                                        
                     for (var i=0; i < Object.keys(dict_consequence_resilience).length; i++) {
                         id = "CR".concat(i);
                         idDQ = idDQ.concat(i);
                         idW = idW.concat(i);
+
                         if (i==0) {
-                            Createlabel(dict_consequence_resilience[i])
+                            createCategory(dict_consequence_resilience[i])
                         } else {
                             var order = i.toString;
-                            order = "C".concat(i, ". ")
-                            myFunction(order.concat(dict_consequence_resilience[i][0]))
+                            order = "C".concat(i, ".")
+                            myFunction(order.concat(dict_consequence_resilience[i][0]), id)
                             createAnswer(dict_consequence_resilience[i][1], id)
-                            myFunction(order.concat(DQ[1][0]))
+                            myFunction(order.concat(DQ[1][0]), idDQ)
                             createAnswer(DQ[1][1], idDQ)
-                            myFunction(order.concat(Weight[1][0]))
+                            myFunction(order.concat(Weight[1][0]), idW)
                             createAnswer(Weight[1][1], idW)
                         }
                     }
@@ -526,11 +529,11 @@
                                 
                                 // order = order.toString;
                                 order = "C".concat(order, ".", j, '. ')
-                                myFunction(order.concat(dict_exposure[x][0].replace("'TN'", res_arr[i])))
+                                myFunction(order.concat(dict_exposure[x][0].replace("'TN'", res_arr[i])), id)
                                 createAnswer(dict_exposure[x][1], id)
-                                myFunction(order.concat(DQ[1][0]))
+                                myFunction(order.concat(DQ[1][0]), idDQ.concat(id))
                                 createAnswer(DQ[1][1], idDQ.concat(id))
-                                myFunction(order.concat(Weight[1][0]))
+                                myFunction(order.concat(Weight[1][0]), idW.concat(id))
                                 createAnswer(Weight[1][1], idW.concat(id))
                             } else {
                                 if (j-a == 1) {
@@ -539,11 +542,11 @@
                                 id = "C".concat((j-a), i)
                    
                                 order = "C".concat(order, ".", j, '. ')
-                                myFunction(order.concat(dict_consequence_sensitivity[j-a][0].replace("'TN'", res_arr[i])))
+                                myFunction(order.concat(dict_consequence_sensitivity[j-a][0].replace("'TN'", res_arr[i])), id)
                                 createAnswer(dict_consequence_sensitivity[j-a][1], id)
-                                myFunction(order.concat(DQ[1][0]))
+                                myFunction(order.concat(DQ[1][0]), idDQ.concat(id))
                                 createAnswer(DQ[1][1], idDQ.concat(id))
-                                myFunction(order.concat(Weight[1][0]))
+                                myFunction(order.concat(Weight[1][0]), idW.concat(id))
                                 createAnswer(Weight[1][1], idW.concat(id))
                             }
                             
@@ -566,12 +569,17 @@
                 }
             }
 
-            function myFunction(text) {
+            function myFunction(text, id) {
                 var string = text
                 var question = document.createElement("p");
                 question.innerText = string;
+                question.setAttribute('id', id);
                 question.setAttribute('style', 'font-weight: 900;');
-                document.getElementById('questionaire').appendChild(question);
+
+                var allSelects = document.getElementsByClassName("content");
+                var lastSelect = allSelects[allSelects.length-1];
+                // console.log(lastSelect)
+                lastSelect.appendChild(question);
             }
 
             function Createlabel(text) {
@@ -581,41 +589,59 @@
             }
 
             function createCategory(text) {
-                var label = document.createElement("h3");
+                var label = document.createElement("button");
+                var container = document.createElement('div')
                 label.innerText = text;
-                label.setAttribute('style', 'color:blue;');
+                label.setAttribute('id', "collapsible");
+                label.setAttribute('type', 'button');
+                label.setAttribute('class', "collapsible active");
+                // label.setAttribute('style', 'color:blue;');
                 document.getElementById('questionaire').appendChild(label);
+
+                container.setAttribute('class', 'content');
+                container.setAttribute('id', 'content');
+                container.setAttribute('style', 'display: block;');
+                document.getElementById('questionaire').appendChild(container);
             }
 
             function createAnswer(data, id) {
                 for (var m = 1; m <= Object.keys(data).length; m++) {
                     var question = document.createElement('input')
                     var label = document.createElement('label')
+                    var downline = document.createElement('br');
                     question.setAttribute('name', 'Answer'.concat(id));
                     question.setAttribute('value', data[m]);
-                    question.setAttribute('type', 'radio')
+                    question.setAttribute('type', 'radio');
                     label.innerText = data[m];
-                    document.getElementById('questionaire').appendChild(question);
-                    document.getElementById('questionaire').appendChild(label);
+
+                    var allSelects = document.getElementsByClassName("content");
+                    var lastSelect = allSelects[allSelects.length-1];
+
+                    lastSelect.appendChild(question);
+                    lastSelect.appendChild(label);
+                    lastSelect.appendChild(downline);
                 }
             }
         }
         // Create affect collapsible
         {
-            var coll = document.getElementsByClassName("collapsible");
-            var i;
-
-            for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.display === "block") {
-            content.style.display = "none";
-            } else {
-            content.style.display = "block";
+            Animation()
+            function Animation() {
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+                console.log(Array.from(coll));
+                for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.display === "block") {
+                        content.style.display = "none";
+                        } else {
+                        content.style.display = "block";
+                        }
+                    });
+                }
             }
-        });
-        }
         }
     </script>
 </body>
