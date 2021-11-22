@@ -376,7 +376,7 @@
         {
             dict_consequence_resilience = {
                 0: 'Khả năng phục hồi của rừng ngập mặn (Mangrove resilience)',
-                1: ["Tại khu vực anh (chị), trụ mầm loài đước có khả năng khuếch tán trong rừng ngập mặn với khoảng cách trung bình bao nhiêu mét?", 
+                1: ["Tại khu vực anh (chị), trụ mầm loài đước có khả năng khuếch tán trong rừng ngập mặn với khoảng cách trung bình bao nhiêu km?", 
                 {
                     1: "Khoảng cách nhỏ hơn 10 km",
                     2: "Khoảng cách trong khoảng từ 10 - 100 km",
@@ -386,7 +386,7 @@
                 {
                     1: "Mỗi lần xảy ra hằng năm hoặc thường xuyên hơn",
                     2: "Mỗi lần xảy ra cách nhau khoảng 1 - 2 năm",
-                    3: "Mỗi lần xảy ra 2 năm trở",
+                    3: "Mỗi lần xảy ra 2 năm trở lên",
                 }],
                 3: ["Để một khu vực rừng ngập mặn non trẻ phát triển trở thành rừng trưởng thành phải mất khoảng thời gian là bao lâu?",
                 {
@@ -445,7 +445,7 @@
             DQ = {
                 1: ['Dữ liệu đã được anh (chị) đã cung cấp có nguồn từ', {
                     1: 'Dữ liệu được cung cấp từ các bài báo được thực hiện trong cung khu vực',
-                    2: 'Dũ liệu được thu thập từ dữ liệu toàn cầu',
+                    2: 'Dữ liệu được thu thập từ dữ liệu toàn cầu',
                     3: 'Dữ liệu ít hoặc hạn chế, do người sử dụng suy luận'
                 }]
             }
@@ -503,10 +503,12 @@
                             order = "C".concat(i, ".")
                             myFunction(order.concat(dict_consequence_resilience[i][0]), id)
                             createAnswer(dict_consequence_resilience[i][1], id)
-                            myFunction(order.concat(DQ[1][0]), idDQ)
-                            createAnswer(DQ[1][1], idDQ)
+                            
                             myFunction(order.concat(Weight[1][0]), idW)
                             createAnswer(Weight[1][1], idW)
+                            
+                            myFunction(order.concat(DQ[1][0]), idDQ)
+                            createAnswer(DQ[1][1], idDQ)
                         }
                     }
                     
@@ -531,10 +533,12 @@
                                 order = "C".concat(order, ".", j, '. ')
                                 myFunction(order.concat(dict_exposure[x][0].replace("'TN'", res_arr[i])), id)
                                 createAnswer(dict_exposure[x][1], id)
-                                myFunction(order.concat(DQ[1][0]), idDQ.concat(id))
-                                createAnswer(DQ[1][1], idDQ.concat(id))
+                              
                                 myFunction(order.concat(Weight[1][0]), idW.concat(id))
                                 createAnswer(Weight[1][1], idW.concat(id))
+                                
+                                myFunction(order.concat(DQ[1][0]), idDQ.concat(id))
+                                createAnswer(DQ[1][1], idDQ.concat(id))
                             } else {
                                 if (j-a == 1) {
                                     createCategory("Tiêu chí hậu quả (Consequence criteria)")
@@ -544,10 +548,12 @@
                                 order = "C".concat(order, ".", j, '. ')
                                 myFunction(order.concat(dict_consequence_sensitivity[j-a][0].replace("'TN'", res_arr[i])), id)
                                 createAnswer(dict_consequence_sensitivity[j-a][1], id)
-                                myFunction(order.concat(DQ[1][0]), idDQ.concat(id))
-                                createAnswer(DQ[1][1], idDQ.concat(id))
+                                
                                 myFunction(order.concat(Weight[1][0]), idW.concat(id))
                                 createAnswer(Weight[1][1], idW.concat(id))
+                                
+                                myFunction(order.concat(DQ[1][0]), idDQ.concat(id))
+                                createAnswer(DQ[1][1], idDQ.concat(id))
                             }
                             
                         }
