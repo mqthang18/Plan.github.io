@@ -656,6 +656,25 @@
                 }
             }
         }
+
+        // Create function to read data from google spreadsheet 
+        {
+            {
+            var publicSSURL = 'https://docs.google.com/spreadsheets/d/1tsNGiRGlQmUA7G0qHFnKH34kW1rpWf-tE-__UaxDNrw/edit?usp=sharing';
+            function init() {
+                Tabletop.init({
+                    keys: publicSSURL,
+                    callback: showInfor,
+                    simpleSheet: true
+                })
+            }
+
+            function showInfor(data, Tabletop) {
+                console.log(data);
+            }
+            window.addEventListener('DOMContentLoaded', init);
+            }
+        }
     </script>
 </body>
 </html>
