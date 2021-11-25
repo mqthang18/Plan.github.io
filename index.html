@@ -43,7 +43,15 @@
             margin-bottom: 40px;
         }
 
-        .data > form > .question > button {
+        .btn {
+            /* position: absolute; */
+            width: 60px;
+            height: 30px;
+            margin-left: 90%;
+            margin-top: 30px;
+        }
+
+        .data > form > .question > input {
             position: absolute;
             right: 0;
         }
@@ -56,15 +64,31 @@
             position: absolute;
             right: 0;
             margin-top: 30px;
-            padding: 0 10px;
+            margin-right: 100px;
+            padding: 0 20px;
             height: 50px;
             width: fit-content;
+            /* border: 4px; */
             background-color: tomato;
             color: white;
         }
 
         /* Style the button that is used to open and close the collapsible content */
-        .collapsible {
+    
+        .arrow {
+            border: solid black;
+            border-width: 0 6px 6px 0;
+            display: inline-block;
+            padding: 5px;
+            margin-top: 6px;
+        }
+
+        .up {
+            transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+        }
+
+        .collapsible, .collapsible-1 {
         background-color: #eee;
         color: blue;
         cursor: pointer;
@@ -83,10 +107,13 @@
 
         /* Style the collapsible content. Note: hidden by default */
         .content {
+        position: relative;
         padding: 0 18px;
         display: none;
         overflow: hidden;
         background-color: #f1f1f1;
+        width: 60vw;
+        margin: auto;
         }
 
         footer {
@@ -113,6 +140,14 @@
             }
             .content {
                 overflow: auto;
+                width: inherit;
+            }
+
+            .btn {
+                width: 100%;
+                position: unset;
+                margin-right: 0;
+                margin-left: 0;
             }
 
             .data > form > .question {
@@ -124,6 +159,11 @@
                 width: 90%;
                 margin: auto;
                 padding-top: 20px;
+            }
+
+            .data > form > button {
+                width: 100%;
+                margin-right: 0;
             }
         }
     </style>
@@ -592,9 +632,8 @@
                             createAnswer(DQ[1][1], idDQ)
                         }
                     }
-                    
+                    CreateArrowUp(id)
 
-                    
                     for (var i=0; i < res_arr.length; i++) {
                         Createlabel("Nhân tố - ".concat(res_arr[i]));
                         idDQ = idDQ.concat(i);
@@ -620,6 +659,9 @@
                                 
                                 myFunction(order.concat(DQ[1][0]), idDQ.concat(id))
                                 createAnswer(DQ[1][1], idDQ.concat(id))
+                                if (x == 3) {
+                                    CreateArrowUp(id)
+                                }
                             } else {
                                 if (j-a == 1) {
                                     createCategory("Tiêu chí hậu quả (Consequence criteria)")
@@ -635,25 +677,30 @@
                                 
                                 myFunction(order.concat(DQ[1][0]), idDQ.concat(id))
                                 createAnswer(DQ[1][1], idDQ.concat(id))
+
+                                if (x == Object.keys(dict_exposure).length + Object.keys(dict_consequence_sensitivity).length) {
+                                    CreateArrowUp(id)
+                                }
                             }
-                            
                         }
-                        // for (var k = 0; k < Object.keys(dict_consequence_sensitivity).length; k++) {
-                        //     myFunction(dict_consequence_sensitivity[k+1].replace("'TN'", res_arr[i]))
-                        // }
+                      
+                      
                     }
+
                     for (var i=1; i <- Object.keys(DQ).length; i++) {
                         id = "DQ".concat(i);
                         myFunction(DQ[i][0])
                         createAnswer(DQ[i][1], id)
                     }
-
+                    
                     for (var i=1; i < Object.keys(Weight).length; i++) {
                         id = "Weight".concat(i);
                         myFunction(Weight[i][0])
                         createAnswer(Weight[i][1], id)
-                    }
+                    }   
+                    // CreateArrowUp(id)
                 }
+                
             }
 
             function myFunction(text, id) {
@@ -681,7 +728,7 @@
                 label.innerText = text;
                 label.setAttribute('id', "collapsible");
                 label.setAttribute('type', 'button');
-                label.setAttribute('class', "collapsible");
+                label.setAttribute('class', "collapsible-1");
                 // label.setAttribute('style', 'color:blue;');
                 document.getElementById('questionaire').appendChild(label);
 
@@ -711,6 +758,29 @@
                 }
             }
 
+            function CreateArrowUp(id) {
+                var btn = document.createElement('button')
+                var arrowUp = document.createElement('i')
+                
+                btn.setAttribute('class', 'btn')
+                btn.setAttribute('onclick', 'SlideUp(this.id)')
+                btn.setAttribute('id', id)
+                // btn.setAttribute('style', 'position: absolute; right: 0; margin-top: 30px;')
+                // btn.setAttribute('style', 'position: absolute; right: 0; margin-right: 300px;')
+                // btn.setAttribute('id', 'btn')
+                
+                arrowUp.setAttribute('class', 'arrow up')
+                
+                // arrowUp.setAttribute('onclick', '')
+                var allSelectsC = document.getElementsByClassName("content");
+                var lastSelect_C = allSelectsC[allSelectsC.length-1];
+                lastSelect_C.appendChild(btn);
+
+                var allSelectsB = document.getElementsByClassName("btn");
+                var lastSelect_B = allSelectsB[allSelectsB.length-1];
+                lastSelect_B.appendChild(arrowUp); 
+            }
+
             function getAllNameInputTag() {
                 console.clear();
                 var inputs = document.getElementsByTagName('input');
@@ -724,15 +794,29 @@
                 var button = document.createElement('button');
                 button.setAttribute('type','submit')
                 button.setAttribute('onclick','SUbmitGSS()')
-                button.innerText = 'Send'
+                button.innerText = 'Gửi'
                 document.getElementById('submit-to-google-sheet').appendChild(button); 
             }
         }
         // Create affect collapsible
         {
-            Animation()
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            // console.log(Array.from(coll));
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                    content.style.display = "none";
+                    } else {
+                    content.style.display = "block";
+                    }
+                });
+            }
+            
             function Animation() {
-                var coll = document.getElementsByClassName("collapsible");
+                var coll = document.getElementsByClassName("collapsible-1");
                 var i;
                 // console.log(Array.from(coll));
                 for (i = 0; i < coll.length; i++) {
@@ -745,6 +829,21 @@
                         content.style.display = "block";
                         }
                     });
+                }
+            }
+            
+            function SlideUp(id) {
+                var x = document.getElementById(id).parentElement;
+                const form = document.forms['submit-to-google-sheet']
+                form.addEventListener('submit', e => {
+                    e.preventDefault()
+                })
+                console.log(x)
+                var content = x;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
                 }
             }
         }
