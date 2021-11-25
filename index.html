@@ -35,6 +35,34 @@
             text-align: justify;
             margin: auto;
         }
+
+        .data > form > .question {
+            width: 60%;
+            margin: auto;
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        .data > form > .question > button {
+            position: absolute;
+            right: 0;
+        }
+
+        .data > form {
+            position: relative;
+        }
+
+        .data > form > button {
+            position: absolute;
+            right: 0;
+            margin-top: 30px;
+            padding: 0 10px;
+            height: 50px;
+            width: fit-content;
+            background-color: tomato;
+            color: white;
+        }
+
         /* Style the button that is used to open and close the collapsible content */
         .collapsible {
         background-color: #eee;
@@ -61,6 +89,21 @@
         background-color: #f1f1f1;
         }
 
+        footer {
+            margin-top: 100px;
+            min-height: 200px;
+            background: rgb(126, 0, 138);
+            position: relative;
+        }
+
+        footer > div {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin-right: 20px;
+            color: white;
+        }
+
         @media screen and (max-width: 750px) {
             .container {
                 flex-direction: column;
@@ -70,6 +113,17 @@
             }
             .content {
                 overflow: auto;
+            }
+
+            .data > form > .question {
+                width: 100%;
+            }
+
+            footer > div {
+                position: unset;
+                width: 90%;
+                margin: auto;
+                padding-top: 20px;
             }
         }
     </style>
@@ -346,28 +400,45 @@
         </ol>
         <span style="font-size: 32px; font-weight: 900; text-decoration: underline;">Nội dung phỏng vấn</span>
             <p>* Shapefile được tạo bằng phương thức khảo sát thực tế dựa trên sự hướng dẫn của cán bộ (người dân) địa phương</p>
-            <div class="question">
-                <p><span style="font-weight: 900;">Mời anh (chị) đánh vào ô trống để cung cấp các thông tin về những nhân tố thực tế đang diễn ra tại địa phương?</span></p>
-                Và từ các tác nhân đã chọn anh (chị) hãy tạo một bản đồ (điểm, đường hoặc vùng) cung cấp phạm vi hoạt động của chúng bằng cách điền khoảng cách từ biên bản đồ đến nơi tối đa mà nhân tố có thể di chuyển tới?
-                <ul style="list-style-type:none;">
-                    <li>
-                        <input type="checkbox" name="Factors" value="Khai thác cây rừng ngập mặn (bất hợp pháp)">Khai thác cây rừng ngập mặn (bất hợp pháp)<br>
-                        <input type="checkbox" name="Factors" value="Đánh bắt thủy hải sản trong rừng ngập mặn (Cá, cua, vọp, ba khía, tôm,...)">Đánh bắt thủy hải sản trong rừng ngập mặn (Cá, cua, vọp, ba khía, tôm,...)<br>
-                        <input type="checkbox" name="Factors" value="Thay đổi về sử dụng đất rừng ngập mặn (sang ao nuôi tôm, cá hợp pháp và bất hợp pháp)">Thay đổi về sử dụng đất rừng ngập mặn (sang ao nuôi tôm, cá hợp pháp và bất hợp pháp)<br>
-                        <input type="checkbox" name="Factors" value="Phát triển cơ sở hạ tầng (giao thông, đô thị,...)">Phát triển cơ sở hạ tầng (giao thông, đô thị,...)<br>
-                        <input type="checkbox" name="Factors" value="Ô nhiễm môi trường (túi nilong, hóa chất từ ao nuôi,..)">Ô nhiễm môi trường (túi nilong, hóa chất từ ao nuôi,..)<br>
-                        <input type="checkbox" name="Factors" value="Xói lở đất">Xói lở đất (tàu bè qua lại, do sóng biển...)<br>
-                        <input type="checkbox" name="Factors" value="Biến đổi khí hậu (mực nước biển tăng, nước quá mặn,...)">Biến đổi khí hậu (mực nước biển tăng, nước quá mặn,...)<br>
-                        <input type="checkbox" name="Factors" value="Một số dịch vụ du lịch sinh thái có liên quan">Một số dịch vụ du lịch sinh thái có liên quan<br>
-                        <input type="checkbox" name="Factors" value="Loài côn trùng vi sinh gây bệnh xâm lấn">Loài côn trùng vi sinh gây bệnh xâm lấn<br>
-                    </li>
-                </ul>
-                <button onclick="GetResponse()">Trả lời</button>
-            </div>
-            <br>
-    
-            <div id="questionaire"></div>
-    </div>   
+            <form id="submit-to-google-sheet" name="submit-to-google-sheet">
+                <input name="Full name" type="text" placeholder="Họ và tên">
+                <br>
+                <input name="Organization" type="text" placeholder="Đơn vị công tac">
+                <br>
+                <!-- <button type="submit" onclick="SUbmitGSS()">Send</button> -->
+              <!-- </form> -->
+                <div class="question">
+                    <p><span style="font-weight: 900;">Mời anh (chị) đánh vào ô trống để cung cấp các thông tin về những nhân tố thực tế đang diễn ra tại địa phương?</span></p>
+                    Và từ các tác nhân đã chọn anh (chị) hãy tạo một bản đồ (điểm, đường hoặc vùng) cung cấp phạm vi hoạt động của chúng bằng cách điền khoảng cách từ biên bản đồ đến nơi tối đa mà nhân tố có thể di chuyển tới?
+                        <ul style="list-style-type:none;">
+                            <li>
+                                <input type="checkbox" class="Factors" name="Factors1" value="Khai thác cây rừng ngập mặn (bất hợp pháp)">Khai thác cây rừng ngập mặn (bất hợp pháp)<br>
+                                <input type="checkbox" class="Factors" name="Factors2" value="Đánh bắt thủy hải sản trong rừng ngập mặn (Cá, cua, vọp, ba khía, tôm,...)">Đánh bắt thủy hải sản trong rừng ngập mặn (Cá, cua, vọp, ba khía, tôm,...)<br>
+                                <input type="checkbox" class="Factors" name="Factors3" value="Thay đổi về sử dụng đất rừng ngập mặn (sang ao nuôi tôm, cá hợp pháp và bất hợp pháp)">Thay đổi về sử dụng đất rừng ngập mặn (sang ao nuôi tôm, cá hợp pháp và bất hợp pháp)<br>
+                                <input type="checkbox" class="Factors" name="Factors4" value="Phát triển cơ sở hạ tầng (giao thông, đô thị,...)">Phát triển cơ sở hạ tầng (giao thông, đô thị,...)<br>
+                                <input type="checkbox" class="Factors" name="Factors5" value="Ô nhiễm môi trường (túi nilong, hóa chất từ ao nuôi,..)">Ô nhiễm môi trường (túi nilong, hóa chất từ ao nuôi,..)<br>
+                                <input type="checkbox" class="Factors" name="Factors6" value="Xói lở đất">Xói lở đất (tàu bè qua lại, do sóng biển...)<br>
+                                <input type="checkbox" class="Factors" name="Factors7" value="Biến đổi khí hậu (mực nước biển tăng, nước quá mặn,...)">Biến đổi khí hậu (mực nước biển tăng, nước quá mặn,...)<br>
+                                <input type="checkbox" class="Factors" name="Factors8" value="Một số dịch vụ du lịch sinh thái có liên quan">Một số dịch vụ du lịch sinh thái có liên quan<br>
+                                <input type="checkbox" class="Factors" name="Factors9" value="Loài côn trùng vi sinh gây bệnh xâm lấn">Loài côn trùng vi sinh gây bệnh xâm lấn<br>
+                            </li>
+                        </ul>
+                        <input type="button" onclick="GetResponse()" value="Xác nhận">
+                </div>
+                <br>
+        
+                <div class="questionaire" id="questionaire"></div>
+            </form>
+    </div>  
+    <footer>
+        <div>
+            <p>Email: maiquocthangt@gmail.com</p>
+            <p>Phone, zalo number: 0949005902</p>
+            <p>Address: Tây Khánh 8, Mỹ Hòa, Long Xuyên, An Giang</p>
+            <p>Descrip: Interview for habitat risk assessment project</p>
+        </div>
+    </footer>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script> 
     <script>
         // Create variables 
         {
@@ -469,8 +540,9 @@
         // Function 
         {
             function GetResponse() {
+                // SUbmitGSS();
                 res_arr = []
-                var Factor = document.getElementsByName('Factors');
+                var Factor = document.getElementsByClassName('Factors');
     
                 let val = Array.from(Factor)
                 
@@ -482,6 +554,8 @@
                 }
                 CreatQuestion()
                 Animation()
+                getAllNameInputTag()
+                AddSubmitBtn()
             }
             
             // console.log(Object.keys(dict_exposure).length)
@@ -623,7 +697,8 @@
                     var label = document.createElement('label')
                     var downline = document.createElement('br');
                     question.setAttribute('name', 'Answer'.concat(id));
-                    question.setAttribute('value', data[m]);
+                    // question.setAttribute('value', data[m]);
+                    question.setAttribute('value', m);
                     question.setAttribute('type', 'radio');
                     label.innerText = data[m];
 
@@ -635,6 +710,23 @@
                     lastSelect.appendChild(downline);
                 }
             }
+
+            function getAllNameInputTag() {
+                console.clear();
+                var inputs = document.getElementsByTagName('input');
+                for (var index = 0; index < inputs.length; ++index) {
+                    console.log(inputs[index].name);
+                }
+            }
+
+            function AddSubmitBtn() {
+                // <button type="submit" onclick="SUbmitGSS()">Send</button>
+                var button = document.createElement('button');
+                button.setAttribute('type','submit')
+                button.setAttribute('onclick','SUbmitGSS()')
+                button.innerText = 'Send'
+                document.getElementById('submit-to-google-sheet').appendChild(button); 
+            }
         }
         // Create affect collapsible
         {
@@ -642,7 +734,7 @@
             function Animation() {
                 var coll = document.getElementsByClassName("collapsible");
                 var i;
-                console.log(Array.from(coll));
+                // console.log(Array.from(coll));
                 for (i = 0; i < coll.length; i++) {
                     coll[i].addEventListener("click", function() {
                         this.classList.toggle("active");
@@ -659,20 +751,16 @@
 
         // Create function to read data from google spreadsheet 
         {
-            {
-            var publicSSURL = 'https://docs.google.com/spreadsheets/d/1tsNGiRGlQmUA7G0qHFnKH34kW1rpWf-tE-__UaxDNrw/edit?usp=sharing';
-            function init() {
-                Tabletop.init({
-                    keys: publicSSURL,
-                    callback: showInfor,
-                    simpleSheet: true
+            function SUbmitGSS() {
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbwFI1zlY_1g2M3ZSFNYuE23m8FlIxaYgg6LQC5fJvZRyJ6wMWEUD0R00n7IDm8FjyLrLw/exec'
+                const form = document.forms['submit-to-google-sheet']
+                // console.log(form);
+                form.addEventListener('submit', e => {
+                    e.preventDefault()
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => console.log('Success!', response))
+                    .catch(error => console.error('Error!', error.message))
                 })
-            }
-
-            function showInfor(data, Tabletop) {
-                console.log(data);
-            }
-            window.addEventListener('DOMContentLoaded', init);
             }
         }
     </script>
