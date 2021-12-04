@@ -1,5 +1,5 @@
-const footer = {
-    template: `
+const footer = 
+    `
     <footer>
         <div>
             <p>Email: maiquocthangt@gmail.com</p>
@@ -9,4 +9,3 @@ const footer = {
         </div>
     </footer>
     `
-}

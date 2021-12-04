@@ -1,5 +1,4 @@
-const data = {
-    template: `
+const data = `
     <div class="data">
     <p>Nguồn dữ liệu bản đồ sinh cảnh (Habitat map): <a href="https://www.eorc.jaxa.jp/ALOS/en/dataset/lulc_e.htm" target="_blank">Link</a></p>
     <span style="font-size: 32px; font-weight: 900; text-decoration: underline;">Nội dung phỏng vấn</span>
@@ -36,4 +35,3 @@ const data = {
         </form>
     </div>  
     `
-}

@@ -1,5 +1,4 @@
-const data = {
-    template: `
+const data = `
     <div class="data">
         <h2>Lựa chọn các câu hỏi nghiên cứu</h2>
         <div class="data-wrapper">
@@ -50,4 +49,3 @@ const data = {
         </div>
     </div>
     `
-}

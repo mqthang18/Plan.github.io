@@ -34,15 +34,19 @@
             var reload = 0; 
             $('#navigation').hide();
             CreateTagInHeader(topic, 'script')
+            // var listEl = {
+            //     1: ['div', 'header'],
+            //     2: ['div', 'container'],
+            //     3: ['div', 'data'],
+            //     4: ['div', 'footer'],
+            //     5: ['script', './public/js/'.concat(topic,'.js')],
+            //     6: ['script', 'main.js']
+            // }
             var listEl = {
-                1: ['div', 'header'],
-                2: ['div', 'container'],
-                3: ['div', 'data'],
-                4: ['div', 'footer'],
-                5: ['script', './public/js/'.concat(topic,'.js')],
-                6: ['script', 'main.js']
+                1: ['div', 'app'],
+                2: ['script', './public/js/'.concat(topic,'.js')],
+                3: ['script', 'main.js']
             }
-
             for (var i = 1; i <= Object.keys(listEl).length; i++) {
                 CreateTag(listEl[i][0], listEl[i][1], 'body')
             }

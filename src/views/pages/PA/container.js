@@ -1,5 +1,4 @@
-const container = {
-    template: `
+const container = `
     <div class="container">
         <div class="left">
             <button type="button" class="collapsible">Bảng 1. Bảng thông tin thể hiện tập tính của loài ong</button>
@@ -58,4 +57,3 @@ const container = {
         </div>
     </div>
     `
-}
