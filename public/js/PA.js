@@ -5,7 +5,7 @@
         var i;
         console.log(Array.from(coll));
         while (Array.from(coll).length == 0) {
-            collapsible()
+            location.reload();
         }
         for (i = 0; i < coll.length; i++) {
             coll[i].addEventListener("click", function() {
