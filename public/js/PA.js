@@ -4,6 +4,9 @@
         var coll = document.getElementsByClassName("collapsible");
         var i;
         console.log(Array.from(coll));
+        while (Array.from(coll).length == 0) {
+            collapsible()
+        }
         for (i = 0; i < coll.length; i++) {
             coll[i].addEventListener("click", function() {
                 this.classList.toggle("active");
@@ -20,5 +23,5 @@
 
 $(document).ready(function(){
 // Do stuff here, including _calling_ codeAddress(), but not _defining_ it!
-collapsible();
+    collapsible();
 });

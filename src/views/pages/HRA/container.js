@@ -1,4 +1,4 @@
-const Container = {
+const container = {
     template: `
     <div class="container" style="margin:auto; width: 90vw;">
         <div class="left">
