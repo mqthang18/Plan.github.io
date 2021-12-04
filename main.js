@@ -5,10 +5,10 @@
     template: header.template
   })
 
-  Vue.component("footer", footer);
-  var app2 = new Vue({
-    el: "#footer",
-    template: footer.template
+  Vue.component("container", container);
+  var app4 = new Vue({
+    el: "#container",
+    template: container.template
   })
 
   Vue.component("data", data);
@@ -17,9 +17,8 @@
     template: data.template
   })
 
-  Vue.component("container", container);
-  var app4 = new Vue({
-    el: "#container",
-    template: container.template
+  Vue.component("footer", footer);
+  var app2 = new Vue({
+    el: "#footer",
+    template: footer.template
   })
-
