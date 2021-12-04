@@ -5,862 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Questionaire</title>
-    <style>
-        :root {
-            --w--leftcol: 50rem;
-        }
-        .html {
-            font-size: 62.5%;
-        }
-        .container {
-            display: flex;
-        }
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+    <!-- Add vuejs package -->
+    <script src="https://unpkg.com/vue-router@2.0.0"></script>
+    <!-- bản production, được tối ưu về dung lượng và tốc độ -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- Get content -->
+    <!-- <script src="src/views/pages/HRA/header.js"></script>
+    <script src="src/views/pages/HRA/container.js"></script>
+    <script src="src/views/pages/HRA/data.js"></script>
+    <script src="src/views/blocks/footer.js"></script> -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-        .container > .left, .right {
-            width: var(--w--leftcol);
-        }
-
-        table, th, td {
-            border: 1px solid black;
-        }
-
-        h1 {
-            text-align: center;
-        }
-        h2 {
-            color: red;
-        }
-        .data {
-            width: 90vw;
-            text-align: justify;
-            margin: auto;
-        }
-
-        .data > form > .question {
-            width: 60%;
-            margin: auto;
-            position: relative;
-            margin-bottom: 40px;
-        }
-
-        .btn {
-            /* position: absolute; */
-            width: 60px;
-            height: 30px;
-            margin-left: 90%;
-            margin-top: 30px;
-        }
-
-        .data > form > .question > input {
-            position: absolute;
-            right: 0;
-        }
-
-        .data > form {
-            position: relative;
-        }
-
-        .data > form > button {
-            position: absolute;
-            right: 0;
-            margin-top: 30px;
-            margin-right: 100px;
-            padding: 0 20px;
-            height: 50px;
-            width: fit-content;
-            /* border: 4px; */
-            background-color: tomato;
-            color: white;
-        }
-
-        /* Style the button that is used to open and close the collapsible content */
-    
-        .arrow {
-            border: solid black;
-            border-width: 0 6px 6px 0;
-            display: inline-block;
-            padding: 5px;
-            margin-top: 6px;
-        }
-
-        .up {
-            transform: rotate(-135deg);
-            -webkit-transform: rotate(-135deg);
-        }
-
-        .collapsible, .collapsible-1 {
-        background-color: #eee;
-        color: blue;
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 15px;
-        }
-
-        /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-        .active, .collapsible:hover {
-        background-color: #ccc;
-        }
-
-        /* Style the collapsible content. Note: hidden by default */
-        .content {
-        position: relative;
-        padding: 0 18px;
-        display: none;
-        overflow: hidden;
-        background-color: #f1f1f1;
-        width: 60vw;
-        margin: auto;
-        }
-
-        footer {
-            margin-top: 100px;
-            min-height: 200px;
-            background: rgb(126, 0, 138);
-            position: relative;
-        }
-
-        footer > div {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            margin-right: 20px;
-            color: white;
-        }
-
-        @media screen and (max-width: 750px) {
-            .container {
-                flex-direction: column;
-            }
-            :root {
-                --w--leftcol: 100%;
-            }
-            .content {
-                overflow: auto;
-                width: inherit;
-            }
-
-            .btn {
-                width: 100%;
-                position: unset;
-                margin-right: 0;
-                margin-left: 0;
-            }
-
-            .data > form > .question {
-                width: 100%;
-            }
-
-            footer > div {
-                position: unset;
-                width: 90%;
-                margin: auto;
-                padding-top: 20px;
-            }
-
-            .data > form > button {
-                width: 100%;
-                margin-right: 0;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./public/style/HRA.css">
 </head>
 <body>
-    <h1>Khảo sát các nguy cơ rủi ro tiềm ẩn đối với sinh cảnh rừng ngập mặn (User created: MQT)</h1>
-    <div class="container">
-        <div class="left">
-            <button type="button" id="collapsible" class="collapsible">Bảng 1. Bảng thông tin sinh cảnh, nhân tố stress</button>
-            <!-- <h2>Bảng 1. Bảng thông tin sinh cảnh, nhân tố stress</h2> -->
-            <div id="content" class="content">
-                <table>
-                    <tr>
-                        <th>Name</th>
-                        <th>Path</th>
-                        <th>Type</th>
-                        <th>Stressor buffer (meters)</th>
-                    </tr>
-                    <tr>
-                        <td>Mangrove</td>
-                        <td>habitat_layers/Habitat.tif</td>
-                        <td>habitat</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>A</td>
-                        <td>stressor_layers/A.shp</td>
-                        <td>tressor</td>
-                        <td>?</td>
-                    </tr>
-                    <tr>
-                        <td>B</td>
-                        <td>stressor_layers/B.shp</td>
-                        <td>tressor</td>
-                        <td>?</td>
-                    </tr>
-                    <tr>
-                        <td>C</td>
-                        <td>stressor_layers/C.shp</td>
-                        <td>tressor</td>
-                        <td>?</td>
-                    </tr>
-                </table>
-                <p>Cách tính stressor buffer?</p>
-                <p>"Spatial overlap" sẽ được tính dựa trên các dữ liệu về habitat maps, stressor maps, buffer distance và decay equation lựa chọn trong UI program theo công thức: <br> maximum_criteria_score * percentage_overlap + minimum_criteria_score * (1 - percentage_overlap)</p>
-            </div>
-        </div>
-        <div class="right">
-            <button type="button" id="collapsible" class="collapsible">Bảng 2. Bảng tiêu chí (<a href="https://drive.google.com/file/d/156oDUzJpScjAnmZawYBh0BaUL5LCN1Bb/view?usp=sharing" target="_blank">Sơ đồ</a>)</button>
-            <div id="content" class="content">
-                <table>
-                    <tr>
-                        <th>Habitat Name</th>
-                        <th colspan="3">Mangrove</th>
-                        <th>Criteria type</th>
-                    </tr>
-                    <tr>
-                        <td>Habitat resilience attributes</td>
-                        <td>Rating</td>
-                        <td>DQ</td>
-                        <td>Weight</td>
-                        <td>E/C</td>
-                    </tr>
-                    <tr>
-                        <td>recruitment rate</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>C</td>
-                    </tr>
-                    <tr>
-                        <td>natural mortability rate</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>C</td>
-                    </tr>
-                    <tr>
-                        <td>connectivity rate</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>C</td>
-                    </tr>
-                    <tr>
-                        <td>recovery time</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>C</td>
-                    </tr>
-                    <tr>
-                        <td colspan="5"><span style="visibility: hidden;">a</span></td>
-                    </tr>
-                    <tr>
-                        <td>Habitat stressor overlap properties</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>A</td>
-                        <td>Rating</td>
-                        <td>DQ</td>
-                        <td>Weight</td>
-                        <td>E/C</td>
-                    </tr>
-                    <tr>
-                        <td>frequency of disturbance</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>C</td>
-                    </tr>
-                    <tr>
-                        <td>change in area rating</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>C</td>
-                    </tr>
-                    <tr>
-                        <td>change in structure rating</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>C</td>
-                    </tr>
-                    <tr>
-                        <td>temporal overlap rating</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>E</td>
-                    </tr>
-                    <tr>
-                        <td>management effectiveness</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>E</td>
-                    </tr>
-                    <tr>
-                        <td>intensity rating</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>E</td>
-                    </tr>
-                    <tr>
-                        <td colspan="5"><span style="visibility: hidden;">a</span></td>
-                    </tr>
-                    <tr>
-                        <td>B</td>
-                        <td>Rating</td>
-                        <td>DQ</td>
-                        <td>Weight</td>
-                        <td>E/C</td>
-                    </tr>
-                    <tr>
-                        <td>frequency of disturbance</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>C</td>
-                    </tr>
-                    <tr>
-                        <td>change in area rating</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>C</td>
-                    </tr>
-                    <tr>
-                        <td>change in structure rating</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>C</td>
-                    </tr>
-                    <tr>
-                        <td>temporal overlap rating</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>E</td>
-                    </tr>
-                    <tr>
-                        <td>management effectiveness</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>E</td>
-                    </tr>
-                    <tr>
-                        <td>intensity rating</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>E</td>
-                    </tr>
-                    <tr>
-                        <td colspan="5"><span style="visibility: hidden;">a</span></td>
-                    </tr>
-                    <tr>
-                        <td>Habitat stressor overlap properties</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>C</td>
-                        <td>Rating</td>
-                        <td>DQ</td>
-                        <td>Weight</td>
-                        <td>E/C</td>
-                    </tr>
-                    <tr>
-                        <td>frequency of disturbance</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>C</td>
-                    </tr>
-                    <tr>
-                        <td>change in area rating</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>C</td>
-                    </tr>
-                    <tr>
-                        <td>change in structure rating</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>C</td>
-                    </tr>
-                    <tr>
-                        <td>temporal overlap rating</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>E</td>
-                    </tr>
-                    <tr>
-                        <td>management effectiveness</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>E</td>
-                    </tr>
-                    <tr>
-                        <td>intensity rating</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>E</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-    <div class="data">
-        <p>Nguồn dữ liệu bản đồ sinh cảnh (Habitat map): <a href="https://www.eorc.jaxa.jp/ALOS/en/dataset/lulc_e.htm" target="_blank">Link</a></p>
-        <div>Tài liệu tham khảo</div>
-        <ol>
-            <li>Phạm Thu Thủy, et al. "Cơ hội và thách thức đối với quản lý rừng ngập mặn tại Việt Nam."</li>
-            <li>Arkema, Katie K., et al. "Assessing habitat risk from human activities to inform coastal and marine spatial planning: a demonstration in Belize." Environmental Research Letters 9.11 (2014): 114016.</li>
-            <li>Caro, Claudia, et al. "Ecosystem services as a resilience descriptor in habitat risk assessment using the InVEST model." Ecological Indicators 115 (2020): 106426.</li>
-            <li>NGUYEN, Tanh, et al. "APPLYING A SOFT SYSTEM METHODOLOGY TO REVEAL PROBLEMS IN MANGROVE-AQUACULTURE SYSTEM." Journal of Environmental Science for Sustainable Society 10.Supplement (2021): MR05_p17-MR05_p22.</li>
-        </ol>
-        <span style="font-size: 32px; font-weight: 900; text-decoration: underline;">Nội dung phỏng vấn</span>
-            <p>* Shapefile được tạo bằng phương thức khảo sát thực tế dựa trên sự hướng dẫn của cán bộ (người dân) địa phương</p>
-            <form id="submit-to-google-sheet" name="submit-to-google-sheet">
-                <input name="Full name" type="text" placeholder="Họ và tên">
-                <br>
-                <input name="Organization" type="text" placeholder="Đơn vị công tac">
-                <br>
-                <!-- <button type="submit" onclick="SUbmitGSS()">Send</button> -->
-              <!-- </form> -->
-                <div class="question">
-                    <p><span style="font-weight: 900;">Mời anh (chị) đánh vào ô trống để cung cấp các thông tin về những nhân tố thực tế đang diễn ra tại địa phương?</span></p>
-                    Và từ các tác nhân đã chọn anh (chị) hãy tạo một bản đồ (điểm, đường hoặc vùng) cung cấp phạm vi hoạt động của chúng bằng cách điền khoảng cách từ biên bản đồ đến nơi tối đa mà nhân tố có thể di chuyển tới?
-                        <ul style="list-style-type:none;">
-                            <li>
-                                <input type="checkbox" class="Factors" name="Factors1" value="Khai thác cây rừng ngập mặn (bất hợp pháp)">Khai thác cây rừng ngập mặn (bất hợp pháp)<br>
-                                <input type="checkbox" class="Factors" name="Factors2" value="Đánh bắt thủy hải sản trong rừng ngập mặn (Cá, cua, vọp, ba khía, tôm,...)">Đánh bắt thủy hải sản trong rừng ngập mặn (Cá, cua, vọp, ba khía, tôm,...)<br>
-                                <input type="checkbox" class="Factors" name="Factors3" value="Thay đổi về sử dụng đất rừng ngập mặn (sang ao nuôi tôm, cá hợp pháp và bất hợp pháp)">Thay đổi về sử dụng đất rừng ngập mặn (sang ao nuôi tôm, cá hợp pháp và bất hợp pháp)<br>
-                                <input type="checkbox" class="Factors" name="Factors4" value="Phát triển cơ sở hạ tầng (giao thông, đô thị,...)">Phát triển cơ sở hạ tầng (giao thông, đô thị,...)<br>
-                                <input type="checkbox" class="Factors" name="Factors5" value="Ô nhiễm môi trường (túi nilong, hóa chất từ ao nuôi,..)">Ô nhiễm môi trường (túi nilong, hóa chất từ ao nuôi,..)<br>
-                                <input type="checkbox" class="Factors" name="Factors6" value="Xói lở đất">Xói lở đất (tàu bè qua lại, do sóng biển...)<br>
-                                <input type="checkbox" class="Factors" name="Factors7" value="Biến đổi khí hậu (mực nước biển tăng, nước quá mặn,...)">Biến đổi khí hậu (mực nước biển tăng, nước quá mặn,...)<br>
-                                <input type="checkbox" class="Factors" name="Factors8" value="Một số dịch vụ du lịch sinh thái có liên quan">Một số dịch vụ du lịch sinh thái có liên quan<br>
-                                <input type="checkbox" class="Factors" name="Factors9" value="Loài côn trùng vi sinh gây bệnh xâm lấn">Loài côn trùng vi sinh gây bệnh xâm lấn<br>
-                            </li>
-                        </ul>
-                        <input type="button" onclick="GetResponse()" value="Xác nhận">
-                </div>
-                <br>
-        
-                <div class="questionaire" id="questionaire"></div>
-            </form>
-    </div>  
-    <footer>
-        <div>
-            <p>Email: maiquocthangt@gmail.com</p>
-            <p>Phone, zalo number: 0949005902</p>
-            <p>Address: Tây Khánh 8, Mỹ Hòa, Long Xuyên, An Giang</p>
-            <p>Descrip: Interview for habitat risk assessment project</p>
-        </div>
-    </footer>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script> 
+    <ul id="navigation">
+        <li><a href="?topic=HRA">HRA</a></li>
+        <li><a href="?topic=HQ">HQ</a></li>
+        <li><a href="?topic=PA">PA</a></li>
+    </ul>
+    <!-- <div id="header"></div>
+    <div id="app"></div>
+    <div id="data"></div>  
+    <div id="footer"></div>
+    <script src="./public/js/HRA.js"></script>
+    <script src="main.js"></script> -->
     <script>
-        // Create variables 
-        {
-            var res_arr = [];
-            var dict_exposure = new Object; 
-            var dict_consequence_sensitivity = new Object;
-            var dict_consequence_resilience = new Object; 
-            var DQ = new Object; 
-            var Weight = new Object; 
-        }
+        var url = window.location.href;
+        // alert(url);
+        var url = new URL(url);
+        var topic = url.searchParams.get("topic");
         
-        // Dictionary question 
-        {
-            dict_consequence_resilience = {
-                0: 'Khả năng phục hồi của rừng ngập mặn (Mangrove resilience)',
-                1: ["Tại khu vực anh (chị), trụ mầm loài đước có khả năng khuếch tán trong rừng ngập mặn với khoảng cách trung bình bao nhiêu km?", 
-                {
-                    1: "Khoảng cách nhỏ hơn 10 km",
-                    2: "Khoảng cách trong khoảng từ 10 - 100 km",
-                    3: "Khoảng cách lớn hơn 100 km"
-                }],
-                2: ["Các đợt bổ sung trụ mầm đước (theo cách tự nhiên hoặc theo các đợt trồng) đối với khu vực rừng ngập mặn thường cách nhau khoảng thời gian là bao lâu?", 
-                {
-                    1: "Mỗi lần xảy ra hằng năm hoặc thường xuyên hơn",
-                    2: "Mỗi lần xảy ra cách nhau khoảng 1 - 2 năm",
-                    3: "Mỗi lần xảy ra 2 năm trở lên",
-                }],
-                3: ["Để một khu vực rừng ngập mặn non trẻ phát triển trở thành rừng trưởng thành phải mất khoảng thời gian là bao lâu?",
-                {
-                    1:"Thời gian trưởng thành ít hơn 1 năm",
-                    2:"Thời gian trưởng thành năm trong đoạn 1 - 10 năm",
-                    3:"Thời gian trưởng thành hơn 10 năm"
-                }],
-                4: ["Số lượng cá thể đước tử vong tự nhiên trong rừng ngập mặn chiếm khoảng bao nhiêu phần trăm?",
-                {
-                    1:"Mức tử vong tự nhiên lớn hơn 80%",
-                    2:"Mức tử vong tự nhiên nằm trong đoạn 20% - 50%",
-                    3:"Mức tử vong tự nhiên nằm trong đoạn ít hơn 20%"
-                }]
+        if (topic !== null) {
+            // alert(topic)
+            $('#navigation').hide();
+            CreateTagInHeader(topic, 'script')
+            var listEl = {
+                1: ['div', 'header'],
+                2: ['div', 'app'],
+                3: ['div', 'data'],
+                4: ['div', 'footer'],
+                5: ['script', './public/js/'.concat(topic,'.js')],
+                6: ['script', 'main.js']
             }
 
-            dict_consequence_sensitivity = {
-                1: ["Sinh cảnh rừng ngập mặn phải đối mặt với các xáo trộn do tự nhiên tác động có cơ chế tương tự với tác nhân ('TN') ở mức độ thường xuyên như thế nào?",
-                {
-                    1: "Hằng ngày đến hằng tuần",
-                    2: "Một vài lần trên năm",
-                    3: "Hiếm khi chịu tác động từ tự nhiên"
-                }],
-                2: ["Rừng ngập mặn tại khu vực chịu tác động của tác nhân ('TN') thường tạo ra sự thay đổi như thế nào trong số lượng cá thể của sinh cảnh?",
-                {
-                    1: "Số lượng cá thể giảm thấp hơn 20% tổng số",
-                    2: "Số lượng cá thể giảm trong khoảng 20% - 50%",
-                    3: "Số lượng cá thể giảm lớn hơn 50% tổng số"
-                }],
-                3: ["Rừng ngập mặn khi đối mặt tác nhân ('TN') thường tạo ra sự thay đổi như thế nào trong phạm vi (diện tích) của sinh cảnh ?",
-                {
-                    1: "Diện tích phân bố giảm thấp hơn 20%",
-                    2: "Diện tích phấn bố giảm trong khoảng 20% - 50%",
-                    3: "Diện tích phân bố giảm hơn 50%"
-                }],  
+            for (var i = 1; i <= Object.keys(listEl).length; i++) {
+                CreateTag(listEl[i][0], listEl[i][1], 'body')
             }
+        } 
 
-            dict_exposure = {
-            // 1: "Không gian mà môi trường sống trùng lặp với tác nhân gây căng thẳng ('TN') là bao nhiêu?",
-            1: ["Rừng ngập mặn thường phải đối mặt với tác nhân ('TN') trong khoảng thời gian là bao lâu?",{
-                1:"Khoảng 0-4 tháng/năm",
-                2:"Khoảng 4-8 tháng/năm",
-                3:"Khoảng 8-12 tháng/năm"
-            }],
-            2: ["Rừng ngập mặn thường phải đối mặt với tác nhân ('TN') xảy ra trong một năm trung bình theo anh (chị) thuộc mức độ nào?",{
-                1:"Thấp",
-                3:"Cao",
-                2:"Trung bình"
-            }],
-            3: ["Các biện pháp quản lý tác nhân ('TN') có hiệu quả như thế nào? (* Note: chỉ phỏng vấn ý này đối với chuyên gia)",{
-                1:"Rất hiệu quả",
-                2:"Hiệu quả một phần nào đo",
-                3:"Ít hiệu quả"
-            }]
+        function CreateTag(tag, str, pos) {
+            var a = document.createElement(tag);
+            if (tag == 'div') {
+                a.setAttribute('id', str);
+            } else {
+                a.setAttribute('src', str);
+            }
+            switch(pos) {
+                case 'body': 
+                    document.body.appendChild(a);
+                    break;
+                case 'head':
+                    document.head.appendChild(a);
+            }            
         }
 
-            DQ = {
-                1: ['Dữ liệu đã được anh (chị) đã cung cấp có nguồn từ', {
-                    1: 'Dữ liệu được cung cấp từ các bài báo được thực hiện trong cung khu vực',
-                    2: 'Dữ liệu được thu thập từ dữ liệu toàn cầu',
-                    3: 'Dữ liệu ít hoặc hạn chế, do người sử dụng suy luận'
-                }]
-            }
+        function CreateTagInHeader(topic, tag) {
+            var listPath = [
+                'src/views/pages/[Category]/header.js',
+                'src/views/pages/[Category]/container.js',
+                'src/views/pages/[Category]/data.js',
+                'src/views/blocks/footer.js'
+            ]
 
-            Weight = {
-                1: ["Mức độ đóng góp của tiêu chí đối với sinh cảnh hoặc nhân tố trên", {
-                    1: "Quan trọng nhất", 
-                    2: "Tương đối quan trọng",
-                    3: "Không quan trọng"
-                }]
-            }
-        }
-        
-        // Function 
-        {
-            function GetResponse() {
-                // SUbmitGSS();
-                res_arr = []
-                var Factor = document.getElementsByClassName('Factors');
-    
-                let val = Array.from(Factor)
-                
-                for (var i = 0, length = Factor.length; i < length; i++) {
-                    if (Factor[i].checked) {
-                        var a = Factor[i].value; 
-                        res_arr.push(a);
+            switch(topic) {
+                case 'HQ':
+                    for (var i = 0; i < listPath.length; i++) {
+                        CreateTag('script', listPath[i].replace('[Category]',topic), 'head');
                     }
-                }
-                CreatQuestion()
-                Animation()
-                getAllNameInputTag()
-                AddSubmitBtn()
-            }
-            
-            // console.log(Object.keys(dict_exposure).length)
-            function CreatQuestion() {
-                let element = document.getElementById("questionaire");
-                while (element.firstChild) {
-                element.removeChild(element.firstChild);
-                }
-                var id;
-                var idDQ;
-                var idW;
-                var idDQ = "DQ"
-                var idW = "Weight"
-
-                if(res_arr.length > 0) {
-                                       
-                    for (var i=0; i < Object.keys(dict_consequence_resilience).length; i++) {
-                        id = "CR".concat(i);
-                        idDQ = idDQ.concat(i);
-                        idW = idW.concat(i);
-
-                        if (i==0) {
-                            createCategory(dict_consequence_resilience[i])
-                        } else {
-                            var order = i.toString;
-                            order = "C".concat(i, ".")
-                            myFunction(order.concat(dict_consequence_resilience[i][0]), id)
-                            createAnswer(dict_consequence_resilience[i][1], id)
-                            
-                            myFunction(order.concat(Weight[1][0]), idW)
-                            createAnswer(Weight[1][1], idW)
-                            
-                            myFunction(order.concat(DQ[1][0]), idDQ)
-                            createAnswer(DQ[1][1], idDQ)
-                        }
+                    break;
+                case 'HRA':
+                    for (var i = 0; i < listPath.length; i++) {
+                        CreateTag('script', listPath[i].replace('[Category]',topic), 'head');
                     }
-                    CreateArrowUp(id)
-
-                    for (var i=0; i < res_arr.length; i++) {
-                        Createlabel("Nhân tố - ".concat(res_arr[i]));
-                        idDQ = idDQ.concat(i);
-                        idW = idW.concat(i);
-                        var a = 2;
-                        for (var j = 0; j < Object.keys(dict_exposure).length + Object.keys(dict_consequence_sensitivity).length; j++) {
-                            // console.log(dict_exposure[j])
-                            var x = j+1;
-                            var order = i + 1;
-                            if (x < 4) {
-                                if (x == 1) {
-                                    createCategory("Tiêu chí phơi nhiễm (Exposure criteria)")
-                                }
-                                id = "E".concat(i, j)
-                                
-                                // order = order.toString;
-                                order = "C".concat(order, ".", j, '. ')
-                                myFunction(order.concat(dict_exposure[x][0].replace("'TN'", res_arr[i])), id)
-                                createAnswer(dict_exposure[x][1], id)
-                              
-                                myFunction(order.concat(Weight[1][0]), idW.concat(id))
-                                createAnswer(Weight[1][1], idW.concat(id))
-                                
-                                myFunction(order.concat(DQ[1][0]), idDQ.concat(id))
-                                createAnswer(DQ[1][1], idDQ.concat(id))
-                                if (x == 3) {
-                                    CreateArrowUp(id)
-                                }
-                            } else {
-                                if (j-a == 1) {
-                                    createCategory("Tiêu chí hậu quả (Consequence criteria)")
-                                }
-                                id = "C".concat((j-a), i)
-                   
-                                order = "C".concat(order, ".", j, '. ')
-                                myFunction(order.concat(dict_consequence_sensitivity[j-a][0].replace("'TN'", res_arr[i])), id)
-                                createAnswer(dict_consequence_sensitivity[j-a][1], id)
-                                
-                                myFunction(order.concat(Weight[1][0]), idW.concat(id))
-                                createAnswer(Weight[1][1], idW.concat(id))
-                                
-                                myFunction(order.concat(DQ[1][0]), idDQ.concat(id))
-                                createAnswer(DQ[1][1], idDQ.concat(id))
-
-                                if (x == Object.keys(dict_exposure).length + Object.keys(dict_consequence_sensitivity).length) {
-                                    CreateArrowUp(id)
-                                }
-                            }
-                        }
-                      
-                      
+                    break;
+                case 'PA': 
+                    for (var i = 0; i < listPath.length; i++) {
+                        CreateTag('script', listPath[i].replace('[Category]',topic), 'head');
                     }
-
-                    for (var i=1; i <- Object.keys(DQ).length; i++) {
-                        id = "DQ".concat(i);
-                        myFunction(DQ[i][0])
-                        createAnswer(DQ[i][1], id)
-                    }
-                    
-                    for (var i=1; i < Object.keys(Weight).length; i++) {
-                        id = "Weight".concat(i);
-                        myFunction(Weight[i][0])
-                        createAnswer(Weight[i][1], id)
-                    }   
-                    // CreateArrowUp(id)
-                }
-                
-            }
-
-            function myFunction(text, id) {
-                var string = text
-                var question = document.createElement("p");
-                question.innerText = string;
-                question.setAttribute('id', id);
-                question.setAttribute('style', 'font-weight: 900;');
-
-                var allSelects = document.getElementsByClassName("content");
-                var lastSelect = allSelects[allSelects.length-1];
-                // console.log(lastSelect)
-                lastSelect.appendChild(question);
-            }
-
-            function Createlabel(text) {
-                var label = document.createElement("h2");
-                label.innerText = text;
-                document.getElementById('questionaire').appendChild(label);
-            }
-
-            function createCategory(text) {
-                var label = document.createElement("button");
-                var container = document.createElement('div')
-                label.innerText = text;
-                label.setAttribute('id', "collapsible");
-                label.setAttribute('type', 'button');
-                label.setAttribute('class', "collapsible-1");
-                // label.setAttribute('style', 'color:blue;');
-                document.getElementById('questionaire').appendChild(label);
-
-                container.setAttribute('class', 'content');
-                container.setAttribute('id', 'content');
-              
-                document.getElementById('questionaire').appendChild(container);
-            }
-
-            function createAnswer(data, id) {
-                for (var m = 1; m <= Object.keys(data).length; m++) {
-                    var question = document.createElement('input')
-                    var label = document.createElement('label')
-                    var downline = document.createElement('br');
-                    question.setAttribute('name', 'Answer'.concat(id));
-                    // question.setAttribute('value', data[m]);
-                    question.setAttribute('value', m);
-                    question.setAttribute('type', 'radio');
-                    label.innerText = data[m];
-
-                    var allSelects = document.getElementsByClassName("content");
-                    var lastSelect = allSelects[allSelects.length-1];
-
-                    lastSelect.appendChild(question);
-                    lastSelect.appendChild(label);
-                    lastSelect.appendChild(downline);
-                }
-            }
-
-            function CreateArrowUp(id) {
-                var btn = document.createElement('button')
-                var arrowUp = document.createElement('i')
-                
-                btn.setAttribute('class', 'btn')
-                btn.setAttribute('onclick', 'SlideUp(this.id)')
-                btn.setAttribute('id', id)
-                // btn.setAttribute('style', 'position: absolute; right: 0; margin-top: 30px;')
-                // btn.setAttribute('style', 'position: absolute; right: 0; margin-right: 300px;')
-                // btn.setAttribute('id', 'btn')
-                
-                arrowUp.setAttribute('class', 'arrow up')
-                
-                // arrowUp.setAttribute('onclick', '')
-                var allSelectsC = document.getElementsByClassName("content");
-                var lastSelect_C = allSelectsC[allSelectsC.length-1];
-                lastSelect_C.appendChild(btn);
-
-                var allSelectsB = document.getElementsByClassName("btn");
-                var lastSelect_B = allSelectsB[allSelectsB.length-1];
-                lastSelect_B.appendChild(arrowUp); 
-            }
-
-            function getAllNameInputTag() {
-                console.clear();
-                var inputs = document.getElementsByTagName('input');
-                for (var index = 0; index < inputs.length; ++index) {
-                    console.log(inputs[index].name);
-                }
-            }
-
-            function AddSubmitBtn() {
-                // <button type="submit" onclick="SUbmitGSS()">Send</button>
-                var button = document.createElement('button');
-                button.setAttribute('type','submit')
-                button.setAttribute('onclick','SUbmitGSS()')
-                button.innerText = 'Gửi'
-                document.getElementById('submit-to-google-sheet').appendChild(button); 
-            }
-        }
-        // Create affect collapsible
-        {
-            var coll = document.getElementsByClassName("collapsible");
-            var i;
-            // console.log(Array.from(coll));
-            for (i = 0; i < coll.length; i++) {
-                coll[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var content = this.nextElementSibling;
-                    if (content.style.display === "block") {
-                    content.style.display = "none";
-                    } else {
-                    content.style.display = "block";
-                    }
-                });
-            }
-            
-            function Animation() {
-                var coll = document.getElementsByClassName("collapsible-1");
-                var i;
-                // console.log(Array.from(coll));
-                for (i = 0; i < coll.length; i++) {
-                    coll[i].addEventListener("click", function() {
-                        this.classList.toggle("active");
-                        var content = this.nextElementSibling;
-                        if (content.style.display === "block") {
-                        content.style.display = "none";
-                        } else {
-                        content.style.display = "block";
-                        }
-                    });
-                }
-            }
-            
-            function SlideUp(id) {
-                var x = document.getElementById(id).parentElement;
-                const form = document.forms['submit-to-google-sheet']
-                form.addEventListener('submit', e => {
-                    e.preventDefault()
-                })
-                console.log(x)
-                var content = x;
-                if (content.style.display === "block") {
-                    content.style.display = "none";
-                } else {
-                    content.style.display = "block";
-                }
-            }
-        }
-
-        // Create function to read data from google spreadsheet 
-        {
-            function SUbmitGSS() {
-                const scriptURL = 'https://script.google.com/macros/s/AKfycbwFI1zlY_1g2M3ZSFNYuE23m8FlIxaYgg6LQC5fJvZRyJ6wMWEUD0R00n7IDm8FjyLrLw/exec'
-                const form = document.forms['submit-to-google-sheet']
-                // console.log(form);
-                form.addEventListener('submit', e => {
-                    e.preventDefault()
-                    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                    .then(response => console.log('Success!', response))
-                    .catch(error => console.error('Error!', error.message))
-                })
-            }
+                    break;
+            }      
         }
     </script>
 </body>

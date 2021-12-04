@@ -1,0 +1,162 @@
+
+:root {
+    --w--leftcol: 45rem;
+}
+.html {
+    font-size: 62.5%;
+}
+.container, .data-wrapper {
+    display: flex;
+}
+
+.left, .right {
+    width: var(--w--leftcol);
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+h1 {
+    text-align: center;
+}
+h2 {
+    color: red;
+}
+
+.data {
+    width: 90vw;
+    text-align: justify;
+    margin: auto;
+}
+
+.data > form > .question {
+    width: 60%;
+    margin: auto;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.btn {
+    /* position: absolute; */
+    width: 60px;
+    height: 30px;
+    margin-left: 90%;
+    margin-top: 30px;
+}
+
+.data > form > .question > input {
+    position: absolute;
+    right: 0;
+}
+
+.data > form {
+    position: relative;
+}
+
+.data > form > button {
+    position: absolute;
+    right: 0;
+    margin-top: 30px;
+    margin-right: 100px;
+    padding: 0 20px;
+    height: 50px;
+    width: fit-content;
+    /* border: 4px; */
+    background-color: tomato;
+    color: white;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+
+.arrow {
+    border: solid black;
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    padding: 5px;
+    margin-top: 6px;
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.collapsible, .collapsible-1 {
+background-color: #eee;
+color: blue;
+cursor: pointer;
+padding: 18px;
+width: 100%;
+border: none;
+text-align: left;
+outline: none;
+font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+position: relative;
+padding: 0 10px;
+display: none;
+overflow: hidden;
+background-color: #f1f1f1;
+width: 45vw;
+margin: auto;
+}
+
+footer {
+    margin-top: 100px;
+    min-height: 200px;
+    background: rgb(126, 0, 138);
+    position: relative;
+}
+
+footer > div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+    color: white;
+}
+
+@media screen and (max-width: 750px) {
+    .container, .data-wrapper {
+        flex-direction: column;
+    }
+    :root {
+        --w--leftcol: 100%;
+    }
+    .content {
+        overflow: auto;
+        width: inherit;
+    }
+
+    .btn {
+        width: 100%;
+        position: unset;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .data > form > .question {
+        width: 100%;
+    }
+
+    footer > div {
+        position: unset;
+        width: 90%;
+        margin: auto;
+        padding-top: 20px;
+    }
+
+    .data > form > button {
+        width: 100%;
+        margin-right: 0;
+    }
+}
