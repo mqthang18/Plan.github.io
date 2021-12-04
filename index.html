@@ -18,9 +18,9 @@
 </head>
 <body>
     <ul id="navigation">
-        <li><a href="?topic=HRA">HRA</a></li>
-        <li><a href="?topic=HQ">HQ</a></li>
-        <li><a href="?topic=PA">PA</a></li>
+        <li><a href="index.html?topic=HRA">HRA</a></li>
+        <li><a href="index.html?topic=HQ">HQ</a></li>
+        <li><a href="index.html?topic=PA">PA</a></li>
     </ul>
 
     <script>
@@ -28,7 +28,7 @@
         // alert(url);
         var url = new URL(url);
         var topic = url.searchParams.get("topic");
-        
+        // alert(url)
         if (topic !== null) {
             // alert(topic)
             var reload = 0; 
