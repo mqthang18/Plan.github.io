@@ -76,17 +76,17 @@
             switch(topic) {
                 case 'HQ':
                     for (var i = 0; i < listPath.length; i++) {
-                        CreateTag('script', listPath[i].replace('[Category]',topic), 'head');
+                        CreateTag('script', listPath[i].replace('[Category]',topic), 'body');
                     }
                     break;
                 case 'HRA':
                     for (var i = 0; i < listPath.length; i++) {
-                        CreateTag('script', listPath[i].replace('[Category]',topic), 'head');
+                        CreateTag('script', listPath[i].replace('[Category]',topic), 'body');
                     }
                     break;
                 case 'PA': 
                     for (var i = 0; i < listPath.length; i++) {
-                        CreateTag('script', listPath[i].replace('[Category]',topic), 'head');
+                        CreateTag('script', listPath[i].replace('[Category]',topic), 'body');
                     }
                     break;
             }      
