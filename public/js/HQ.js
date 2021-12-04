@@ -4,9 +4,6 @@
       var coll = document.getElementsByClassName("collapsible");
       var i;
       console.log(Array.from(coll));
-      while (Array.from(coll).length == 0) {
-        location.reload();
-      }
       for (i = 0; i < coll.length; i++) {
           coll[i].addEventListener("click", function() {
               this.classList.toggle("active");

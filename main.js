@@ -1,3 +1,4 @@
+
   Vue.component("header", header);
   var app = new Vue({
     el: "#header",
