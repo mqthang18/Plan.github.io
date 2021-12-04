@@ -5,7 +5,8 @@
         var i;
         console.log(Array.from(coll));
         if (Array.from(coll).length == 0) {
-            alert('Reload the page');
+            // alert('Reload the page');
+            location.reload;
         }
         for (i = 0; i < coll.length; i++) {
             coll[i].addEventListener("click", function() {
