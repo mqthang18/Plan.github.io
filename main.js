@@ -7,5 +7,6 @@
   })
 } catch (err) {
   console.log('Error');
+  location.reload;
 }
   
