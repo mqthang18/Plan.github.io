@@ -5,7 +5,7 @@
       var i;
       console.log(Array.from(coll));
       if (Array.from(coll).length == 0) {
-        location.reload();
+        window.location.href = url;
     }
       for (i = 0; i < coll.length; i++) {
           coll[i].addEventListener("click", function() {
