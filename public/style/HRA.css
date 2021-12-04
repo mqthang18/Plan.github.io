@@ -108,6 +108,7 @@ overflow: hidden;
 background-color: #f1f1f1;
 width: 45vw;
 margin: auto;
+overflow: auto;
 }
 
 footer {
