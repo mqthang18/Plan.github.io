@@ -111,7 +111,7 @@
 
     Weight = {
         1: ["Mức độ đóng góp của tiêu chí đối với sinh cảnh hoặc nhân tố trên", {
-            1: "Quan trọng nhất", 
+            1: "Rất quan trọng", 
             2: "Tương đối quan trọng",
             3: "Không quan trọng"
         }]
