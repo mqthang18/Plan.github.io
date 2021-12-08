@@ -15,7 +15,7 @@ const data = `
                             <p>Thông tin người tham gia phỏng vấn</p>
                             <input name="Full name" type="text" placeholder="Họ và tên">
                             <br>
-                            <input name="Organization" type="text" placeholder="Đơn vị công tac">
+                            <input name="Organization" type="text" placeholder="Tỉnh thành cư trú">
                             <br>
                             <!-- <button type="submit" onclick="SUbmitGSS()">Send</button> -->
                         </div>
