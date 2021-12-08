@@ -388,13 +388,13 @@
             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
                 confirm = "Success!";
-                console.log(confirm, response)
-                alert('Nhập dữ liệu thành công. Cám ơn sự đóng góp của anh (chị)!')
+                alert('Nhập dữ liệu thành công. Cám ơn sự đóng góp của anh (chị)!');
+                console.log(confirm, response);
             })
             .catch(error => {
                 confirm = "Error!";
-                console.error(confirm, error.message)
-                alert('Nhập dữ liệu thất bại. Xin hãy kiểm tra lại câu trả lời!')
+                alert('Nhập dữ liệu thất bại. Xin hãy kiểm tra lại câu trả lời!');
+                console.error(confirm, error.message);
             })
         })
     }
