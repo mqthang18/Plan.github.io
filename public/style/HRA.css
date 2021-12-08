@@ -126,6 +126,19 @@ footer > div {
     color: white;
 }
 
+/* #submit-to-google-sheet {
+
+} */
+
+.PersonalInfo {
+    margin-left: 80%;
+}
+
+.PersonalInfo > input {
+    height: 30px;
+    width: 250px;
+}
+
 @media screen and (max-width: 750px) {
     .container, .data-wrapper {
         flex-direction: column;

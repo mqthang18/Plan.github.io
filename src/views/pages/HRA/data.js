@@ -11,11 +11,14 @@ const data = `
                 <span style="font-size: 32px; font-weight: 900; text-decoration: underline;">Nội dung phỏng vấn</span>
                     <p>* Shapefile được tạo bằng phương thức khảo sát thực tế dựa trên sự hướng dẫn của cán bộ (người dân) địa phương</p>
                     <form id="submit-to-google-sheet" name="submit-to-google-sheet">
-                        <input name="Full name" type="text" placeholder="Họ và tên">
-                        <br>
-                        <input name="Organization" type="text" placeholder="Đơn vị công tac">
-                        <br>
-                        <!-- <button type="submit" onclick="SUbmitGSS()">Send</button> -->
+                        <div class="PersonalInfo">
+                            <p>Thông tin người tham gia phỏng vấn</p>
+                            <input name="Full name" type="text" placeholder="Họ và tên">
+                            <br>
+                            <input name="Organization" type="text" placeholder="Đơn vị công tac">
+                            <br>
+                            <!-- <button type="submit" onclick="SUbmitGSS()">Send</button> -->
+                        </div>
                     <!-- </form> -->
                         <div class="question">
                             <p><span style="font-weight: 900;">Mời anh (chị) đánh vào ô trống để cung cấp các thông tin về những nhân tố thực tế đang diễn ra tại địa phương?</span></p>
