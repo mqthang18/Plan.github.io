@@ -33,7 +33,8 @@
         // alert(url)
         if (topic !== null) {
             // alert(topic)
-            var reload = 0; 
+            // var reload = 0; 
+            console.log(topic)
             $('#navigation').hide();
             $('.padlet-embed').hide();
             CreateTagInHeader(topic, 'script')
@@ -95,6 +96,11 @@
                     for (var i = 0; i < listPath.length; i++) {
                         CreateTag('script', listPath[i].replace('[Category]',topic), 'body');
                     }
+                    break;
+                case 'Thank':
+                    for (var i = 0; i < listPath.length; i++) {
+                            CreateTag('script', listPath[i].replace('[Category]',topic), 'body');
+                        }
                     break;
             }      
         }

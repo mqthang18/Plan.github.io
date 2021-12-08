@@ -1,0 +1,1 @@
+const container = `<div class="container">Chúng tôi đã nhận được câu trả lời của bạn</div>`

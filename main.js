@@ -6,7 +6,8 @@
     template: textHTML
   })
 } catch (err) {
-  console.log('Error');
+  // console.log('Error');
+  // console.log(err);
   window.location.href = url;
 }
   

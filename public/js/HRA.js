@@ -387,9 +387,11 @@
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
-                confirm = "Success!";
-                alert('Nhập dữ liệu thành công. Cám ơn sự đóng góp của anh (chị)!');
+                // confirm = "Success!";
+                // alert('Nhập dữ liệu thành công. Cám ơn sự đóng góp của anh (chị)!');
+                url = '?topic=Thank'
                 console.log(confirm, response);
+                window.location.href = url;
             })
             .catch(error => {
                 confirm = "Error!";
