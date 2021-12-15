@@ -6,7 +6,7 @@ const data = `<div class="data">
                     <li>Sóc Trăng: Đánh bắt khai thác thủy sản. khu vực sạc lở.</li>
                 </ol>
                 <div id="HQ">
-                    <h3>Đánh giá chất lượng sinh cảnh</h3>
+                    <h3>1. Đánh giá chất lượng sinh cảnh</h3>
                     <iframe style="width: 100%; height: 600px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT77zwyaYfLWW_DaWVx5ZyyposKNYPgt14sE-s37pZLFnEssRurszwhzvi7QmjIs2WvjkSHLBnhxBf5/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                     <ol>
                         <li>Không có sự bổ sung thêm các nhân tố gây nguy hại đối với sinh cảnh ven biển từ các địa phương</li>
@@ -28,7 +28,7 @@ const data = `<div class="data">
                     </ol>
                 </div>
                 <div id="HRA">
-                    <h3>Đánh giá rủi ro sinh cảnh</h3>
+                    <h3>2. Đánh giá rủi ro sinh cảnh</h3>
                     <iframe scrolling="no" style="width: 100%; min-height: 400px;" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS0RBEi5lfo4Ydj7o07n5ZBUwmRlLULjwrqxIVGRvRPzyu6Ho1zelkoMtC-IHYxPfLjhXzk7YQqHU1i/pubhtml?gid=1155747919&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                     <iframe scrolling="no" style="width: 100%; min-height: 400px;" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS0RBEi5lfo4Ydj7o07n5ZBUwmRlLULjwrqxIVGRvRPzyu6Ho1zelkoMtC-IHYxPfLjhXzk7YQqHU1i/pubhtml?gid=974586490&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                     <ol>
