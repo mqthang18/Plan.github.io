@@ -1,5 +1,10 @@
 const data = `<div class="data">
                 <iframe style="width: 100%;" src="https://www.google.com/maps/d/embed?mid=1BBiStyXhq_r6_qzkyLKymhBuIOTd07xX&hl=en_US&ehbc=2E312F" height="600"></iframe>
+                <p>Các khu vực đã được đánh dấu</p>
+                <ol>
+                    <li>Cà Mau: Đánh bắt khai thác thủy sản. khu vực sạc lở, các tuyến dân cư.</li>
+                    <li>Sóc Trăng: Đánh bắt khai thác thủy sản. khu vực sạc lở.</li>
+                </ol>
                 <div id="HQ">
                     <h3>Đánh giá chất lượng sinh cảnh</h3>
                     <iframe style="width: 100%; height: 600px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT77zwyaYfLWW_DaWVx5ZyyposKNYPgt14sE-s37pZLFnEssRurszwhzvi7QmjIs2WvjkSHLBnhxBf5/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
