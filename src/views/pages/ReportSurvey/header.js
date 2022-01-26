@@ -1,0 +1,1 @@
+const header = `<h1>Báo cáo kết quả khảo sát phỏng vấn chủ đề Habitat Risk Assessment và Habitat quality tại 3 tỉnh Sóc Trăng, Cà Mau, Kiên Giang</h1>`
