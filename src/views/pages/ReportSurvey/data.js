@@ -106,12 +106,15 @@ const data = `
             <li id="HQ6">
                 <button type="button" id="collapsible" class="collapsible">Mô tả thay đổi về mức độ tác động của nhân tố qua không gian - <span style="color:red;">dữ liệu phải có cho mô hình Habitat quality (INVEST)</span></button>
                 <div id="content" class="content" style="width: 98.5%">
-                    <p>Trong đợt phỏng vấn vừa rồi hầu như <span style="color:red;">không đạt được</span> dữ liệu liên quan tới mô tả <span style="color:red;">sự biến đổi mức độ tác động của nhân tố</span> qua không gian theo các kiểu "exponential" hay "linear" ở cả 3 tỉnh.</p>
+                    <p>Trong đợt phỏng vấn tại chuyến đi xuống địa phương vừa rồi hầu như <span style="color:red;">không đạt được</span> dữ liệu liên quan tới mô tả <span style="color:red;">sự biến đổi mức độ tác động của nhân tố</span> qua không gian theo các kiểu "exponential" hay "linear" ở cả 3 tỉnh.</p>
+                    <p>Tuy nhiên, dữ liệu có liên quan đã được thu sơ lược qua trong hội thảo.</p>
                     <ul>
                         <li><h5>Sóc Trăng</h5></li>
                         <li><h5>Cà Mau</h5></li>
                         <li><h5>Kiên Giang</h5></li>
                     </ul>
+                    <p>Dữ liệu phỏng vấn tại Hội thảo</p>
+                    <iframe style="width:100%; height: 300px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS5RaJXDL7WXMjAYudh72yo95c0MgXPx5Y9rnK_upZJMNhj1hA6MTrLj9lNu9yh5u2XOOxMKosD3X2m/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                 </div>
             </li>
             <li id="HQ7">
