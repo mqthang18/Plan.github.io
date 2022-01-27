@@ -184,7 +184,9 @@ const data = `
                             <p>Nguyễn Văn Sự</p>
                             <iframe style="width:100%;height: 500px;" src="https://drive.google.com/file/d/1pvJ7VortV93el3QNAvCc9f-TV3tcKt_k/preview" allow="autoplay"></iframe>
                         </li>
-                        <li><h5>Kiên Giang</h5></li>
+                        <li>
+                            <h5>Kiên Giang</h5>
+                        </li>
                     </ul>
                 </div>
             </li>
@@ -197,9 +199,18 @@ const data = `
                 <button type="button" id="collapsible" class="collapsible">Mô tả khả năng phục hồi sinh cảnh RNM</button>
                 <div id="content" class="content" style="width:98.5%">
                     <ul>
-                        <li>Sóc Trăng</li>
-                        <li>Cà Mau</li>
-                        <li>Kiên Giang</li>
+                        <li>
+                            <h5>Sóc Trăng</h5>
+                            <iframe style="width: 100%; height: 200px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR5dc-MAUOEvYt02AsweXJg6CeBVBzqhh0AffaTU7MIl5I0fDvQlQ0iSMGrSPo4czVyBG3_9aUt1aw4/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                        </li>
+                        <li>
+                            <h5>Cà Mau</h5>
+                            <iframe style="width: 100%; height: 200px" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS6nRYBNZNm513qNHtRKVOBdes0qFI2PLj_bGmEpvdjWJmjAIQQeXfkzlWDoR7s15wJtywgOKxOUN1s/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                        </li>
+                        <li>
+                            <h5>Kiên Giang</h5>
+                            <iframe style="width: 100%; height: 200px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSUXqWtT8Ii8K0l3I5Itftc3iFHOX6dt68oUbYdQpu87vHO5G6HhVIyCkI2AS5WrqlOUzhHHL2fHg9B/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                        </li>
                     </ul>
                 </div>
             </li>
@@ -207,9 +218,18 @@ const data = `
                 <button type="button" id="collapsible" class="collapsible">Mô tả hiện tượng xói lở bờ biển tác động tiêu cực đến RNM</button>
                 <div id="content" class="content" style="width:98.5%">
                     <ul>
-                        <li>Sóc Trăng</li>
-                        <li>Cà Mau</li>
-                        <li>Kiên Giang</li>
+                        <li>
+                            <h5>Sóc Trăng</h5>
+                            <iframe style="width: 100%; height: 300px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQI78hpkuhxMM105xTGq0WkJycH5Lk4DE7ERClcfBTsbBvi6E6MozLY9vbQAqX56xMfSbUx6jzHunqR/pubhtml?gid=1187919709&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                        </li>
+                        <li>
+                            <h5>Cà Mau</h5>
+                            <iframe style="width: 100%; height: 300px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS6nRYBNZNm513qNHtRKVOBdes0qFI2PLj_bGmEpvdjWJmjAIQQeXfkzlWDoR7s15wJtywgOKxOUN1s/pubhtml?gid=1187919709&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                        </li>
+                        <li>
+                            <h5>Kiên Giang</h5>
+                            <iframe style="width: 100%; height: 300px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSUXqWtT8Ii8K0l3I5Itftc3iFHOX6dt68oUbYdQpu87vHO5G6HhVIyCkI2AS5WrqlOUzhHHL2fHg9B/pubhtml?gid=1187919709&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                        </li>
                     </ul>
                 </div>
             </li>
@@ -217,9 +237,17 @@ const data = `
                 <button type="button" id="collapsible" class="collapsible">Mô tả hiện tượng ghe cào đánh bắt thủy hải sản</button>
                 <div id="content" class="content" style="width:98.5%">
                     <ul>
-                        <li>Sóc Trăng</li>
-                        <li>Cà Mau</li>
-                        <li>Kiên Giang</li>
+                        <li>
+                            <h5>Sóc Trăng</h5>
+                            <iframe style="width: 100%; height: 320px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQI78hpkuhxMM105xTGq0WkJycH5Lk4DE7ERClcfBTsbBvi6E6MozLY9vbQAqX56xMfSbUx6jzHunqR/pubhtml?gid=1419884724&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                        </li>
+                        <li>
+                            <h5>Cà Mau</h5>
+                            <iframe style="width: 100%; height: 340px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS6nRYBNZNm513qNHtRKVOBdes0qFI2PLj_bGmEpvdjWJmjAIQQeXfkzlWDoR7s15wJtywgOKxOUN1s/pubhtml?gid=1419884724&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                        </li>
+                        <li>
+                            <h5>Kiên Giang</h5>
+                        </li>
                     </ul>
                 </div>
             </li>
@@ -227,9 +255,17 @@ const data = `
                 <button type="button" id="collapsible" class="collapsible">Mô tả hiện tượng khai thác đánh bắt cây rừng bất hợp pháp</button>
                 <div id="content" class="content" style="width:98.5%">
                     <ul>
-                        <li>Sóc Trăng</li>
-                        <li>Cà Mau</li>
-                        <li>Kiên Giang</li>
+                        <li>
+                            <h5>Sóc Trăng</h5>
+                            <iframe style="width: 100%; height: 320px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQI78hpkuhxMM105xTGq0WkJycH5Lk4DE7ERClcfBTsbBvi6E6MozLY9vbQAqX56xMfSbUx6jzHunqR/pubhtml?gid=1741263756&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                        </li>
+                        <li>
+                            <h5>Cà Mau</h5>
+                            <iframe style="width: 100%; height: 320px" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS6nRYBNZNm513qNHtRKVOBdes0qFI2PLj_bGmEpvdjWJmjAIQQeXfkzlWDoR7s15wJtywgOKxOUN1s/pubhtml?gid=1741263756&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                        </li>
+                        <li>
+                            <h5>Kiên Giang</h5>
+                        </li>
                     </ul>
                 </div>
             </li>
@@ -237,9 +273,17 @@ const data = `
                 <button type="button" id="collapsible" class="collapsible">Mô tả hiện tượng ô nhiễm môi trường</button>
                 <div id="content" class="content" style="width:98.5%">
                     <ul>
-                        <li>Sóc Trăng</li>
-                        <li>Cà Mau</li>
-                        <li>Kiên Giang</li>
+                        <li>
+                            <h5>Sóc Trăng</h5>
+                            <iframe style="width: 100%; height: 320px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQI78hpkuhxMM105xTGq0WkJycH5Lk4DE7ERClcfBTsbBvi6E6MozLY9vbQAqX56xMfSbUx6jzHunqR/pubhtml?gid=1563434722&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                        </li>
+                        <li>
+                            <h5>Cà Mau</h5>
+                            <iframe style="width: 100%; height: 320px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS6nRYBNZNm513qNHtRKVOBdes0qFI2PLj_bGmEpvdjWJmjAIQQeXfkzlWDoR7s15wJtywgOKxOUN1s/pubhtml?gid=1563434722&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                        </li>
+                        <li>
+                            <h5>Kiên Giang</h5>
+                        </li>
                     </ul>
                 </div>
             </li>
@@ -247,9 +291,17 @@ const data = `
                 <button type="button" id="collapsible" class="collapsible">Mô tả hiện tượng khô hạn thiếu nước</button>
                 <div id="content" class="content" style="width:98.5%">
                     <ul>
-                        <li>Sóc Trăng</li>
-                        <li>Cà Mau</li>
-                        <li>Kiên Giang</li>
+                        <li>
+                            <h5>Sóc Trăng</h5>
+                            <iframe style="width: 100%; height: 320px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQI78hpkuhxMM105xTGq0WkJycH5Lk4DE7ERClcfBTsbBvi6E6MozLY9vbQAqX56xMfSbUx6jzHunqR/pubhtml?gid=850451087&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                        </li>
+                        <li>
+                            <h5>Cà Mau</h5>
+                            <iframe style="width: 100%; height: 320px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS6nRYBNZNm513qNHtRKVOBdes0qFI2PLj_bGmEpvdjWJmjAIQQeXfkzlWDoR7s15wJtywgOKxOUN1s/pubhtml?gid=850451087&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                        </li>
+                        <li>
+                            <h5>Kiên Giang</h5>
+                        </li>
                     </ul>
                 </div>
             </li>
@@ -257,9 +309,17 @@ const data = `
                 <button type="button" id="collapsible" class="collapsible">Mô tả hiện tượng thay đổi sử dụng đất</button>
                 <div id="content" class="content" style="width:98.5%">
                     <ul>
-                        <li>Sóc Trăng</li>
-                        <li>Cà Mau</li>
-                        <li>Kiên Giang</li>
+                        <li>
+                            <h5>Sóc Trăng</h5>
+                            <iframe style="width: 100%; height: 320px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQI78hpkuhxMM105xTGq0WkJycH5Lk4DE7ERClcfBTsbBvi6E6MozLY9vbQAqX56xMfSbUx6jzHunqR/pubhtml?gid=1493008024&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                        </li>
+                        <li>
+                            <h5>Cà Mau</h5>
+                            <iframe style="width: 100%; height: 320px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS6nRYBNZNm513qNHtRKVOBdes0qFI2PLj_bGmEpvdjWJmjAIQQeXfkzlWDoR7s15wJtywgOKxOUN1s/pubhtml?gid=1493008024&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                        </li>
+                        <li>
+                            <h5>Kiên Giang</h5>
+                        </li>
                     </ul>
                 </div>
             </li>
