@@ -130,8 +130,7 @@ const data = `
             <li id="HQ8">
                 <button type="button" id="collapsible" class="collapsible">Trọng số giữa các cặp tác động - <span style="color:red;">dữ liệu phải có cho mô hình Habitat quality (INVEST)</span></button>
                 <div id="content" class="content" style="width: 98.5%">
-                    <p><span style="color:red; font-weight:600;">Đã làm được</span>: Đối với khu vực <span style="color:red">Sóc Trăng và Cà Mau</span>, dữ liệu đã đáp ứng được</p>
-                    <p><span style="color:red; font-weight:600;">Chưa làm được</span>: Đối với khu vực Kiên Giang, hiện tại chưa đủ dữ liệu</p>
+                    <p><span style="color:red; font-weight:600;">Đã làm được</span>: Đối với khu vực <span style="color:red">Sóc Trăng, Cà Mau và Kiên Giang</span>, dữ liệu đã đáp ứng ở mức tương đối</p>
                     <ul>
                         <li>
                             <h5>Sóc Trăng</h5>
@@ -141,7 +140,10 @@ const data = `
                             <h5>Cà Mau</h5>
                             <iframe style="width: 100%; height: 300px;" scrolling="no" src="https://drive.google.com/file/d/1vrYqyfaqn4-wF1TM66BNJiBhfOSq8cVm/preview" allow="autoplay"></iframe>
                         </li>
-                        <li><h5>Kiên Giang</h5></li>
+                        <li>
+                            <h5>Kiên Giang</h5>
+                            <iframe style="width: 100%; height: 300px;" src="https://drive.google.com/file/d/1H1iZDlLmLZPgAm9WW61cYNIgj3jwR6Nj/preview" allow="autoplay"></iframe>
+                        </li>
                     </ul>
                 </div>
             </li>
@@ -165,7 +167,10 @@ const data = `
                             <p>Lê Tỏa Rạng</p>
                             <iframe style="width: 100%; height: 500px;" src="https://drive.google.com/file/d/1b3V7CutLLzhj34K5dkl0OgWtn3_Hx5m2/preview" allow="autoplay"></iframe>
                         </li>
-                        <li><h5>Kiên Giang</h5></li>
+                        <li>
+                            <h5>Kiên Giang</h5>
+                            <iframe style="width: 100%; height: 500px;" src="https://drive.google.com/file/d/1H1Q-3lg1YudKAi6aTUR4bDRuY8Vio-2v/preview" allow="autoplay"></iframe>
+                        </li>
                     </ul>
                 </div>
             </li>
