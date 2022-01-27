@@ -45,6 +45,15 @@ const container = `
             </li>
             <li>
                 <a href="#" v-on:click="scrollToBottom($event,'HRA')">Đánh giá rủi ro sinh cảnh</a>
+                <ol>
+                    <li><a href="#" v-on:click="scrollToBottom($event, 'HRA1')">Mô tả khả năng phục hồi sinh cảnh RNM</a></li>
+                    <li><a href="#" v-on:click="scrollToBottom($event, 'HRA2')">Mô tả hiện tượng xói lở tác động đến RNM</a></li>
+                    <li><a href="#" v-on:click="scrollToBottom($event, 'HRA3')">Mô tả hiện tượng ghe cào đánh bắt thủy hải sản </a></li>
+                    <li><a href="#" v-on:click="scrollToBottom($event, 'HRA4')">Mô tả hiện tượng khai thác cây rừng bất hợp pháp</a></li>
+                    <li><a href="#" v-on:click="scrollToBottom($event, 'HRA5')">Mô tả hiện tượng ô nhiễm môi trường</a></li>
+                    <li><a href="#" v-on:click="scrollToBottom($event, 'HRA6')">Mô tả hiện tượng khô hạn thiếu nước</a></li>
+                    <li><a href="#" v-on:click="scrollToBottom($event, 'HRA7')">Mô tả hiện tượng thay đổi sử dụng dất</a></li>
+                </ol>
             </li>
         </ul>
     </div>

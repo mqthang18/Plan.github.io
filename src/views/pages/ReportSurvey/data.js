@@ -191,7 +191,79 @@ const data = `
         </ol>
     </div>
     <div id="HRA" style="min-height: 300px;">
-        <h2>Đánh giá rủi ro sinh cảnh - </h2>
+        <h2>Đánh giá rủi ro sinh cảnh - Tóm tắt kết quả: <a href="https://docs.google.com/forms/d/1h8cVl6cRF6YQFVO-uY9VLz9W4cD15d5paxzpgYXuveI/viewanalytics" target="_blank">Link</a></h2>
+        <ol>
+            <li id="HRA1">
+                <button type="button" id="collapsible" class="collapsible">Mô tả khả năng phục hồi sinh cảnh RNM</button>
+                <div id="content" class="content" style="width:98.5%">
+                    <ul>
+                        <li>Sóc Trăng</li>
+                        <li>Cà Mau</li>
+                        <li>Kiên Giang</li>
+                    </ul>
+                </div>
+            </li>
+            <li id="HRA2">
+                <button type="button" id="collapsible" class="collapsible">Mô tả hiện tượng xói lở bờ biển tác động tiêu cực đến RNM</button>
+                <div id="content" class="content" style="width:98.5%">
+                    <ul>
+                        <li>Sóc Trăng</li>
+                        <li>Cà Mau</li>
+                        <li>Kiên Giang</li>
+                    </ul>
+                </div>
+            </li>
+            <li id="HRA3">
+                <button type="button" id="collapsible" class="collapsible">Mô tả hiện tượng ghe cào đánh bắt thủy hải sản</button>
+                <div id="content" class="content" style="width:98.5%">
+                    <ul>
+                        <li>Sóc Trăng</li>
+                        <li>Cà Mau</li>
+                        <li>Kiên Giang</li>
+                    </ul>
+                </div>
+            </li>
+            <li id="HRA4">
+                <button type="button" id="collapsible" class="collapsible">Mô tả hiện tượng khai thác đánh bắt cây rừng bất hợp pháp</button>
+                <div id="content" class="content" style="width:98.5%">
+                    <ul>
+                        <li>Sóc Trăng</li>
+                        <li>Cà Mau</li>
+                        <li>Kiên Giang</li>
+                    </ul>
+                </div>
+            </li>
+            <li id="HRA5">
+                <button type="button" id="collapsible" class="collapsible">Mô tả hiện tượng ô nhiễm môi trường</button>
+                <div id="content" class="content" style="width:98.5%">
+                    <ul>
+                        <li>Sóc Trăng</li>
+                        <li>Cà Mau</li>
+                        <li>Kiên Giang</li>
+                    </ul>
+                </div>
+            </li>
+            <li id="HRA6">
+                <button type="button" id="collapsible" class="collapsible">Mô tả hiện tượng khô hạn thiếu nước</button>
+                <div id="content" class="content" style="width:98.5%">
+                    <ul>
+                        <li>Sóc Trăng</li>
+                        <li>Cà Mau</li>
+                        <li>Kiên Giang</li>
+                    </ul>
+                </div>
+            </li>
+            <li id="HRA7">
+                <button type="button" id="collapsible" class="collapsible">Mô tả hiện tượng thay đổi sử dụng đất</button>
+                <div id="content" class="content" style="width:98.5%">
+                    <ul>
+                        <li>Sóc Trăng</li>
+                        <li>Cà Mau</li>
+                        <li>Kiên Giang</li>
+                    </ul>
+                </div>
+            </li>
+        </ol>
     </div>
 `
 
