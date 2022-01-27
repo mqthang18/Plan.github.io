@@ -1,9 +1,11 @@
 const container = `
-    <div class="data" style="background-color: #d9d9ff;">
-        <h3>Nội dung -  Bản scan phiếu phỏng vấn: <a href="https://drive.google.com/drive/folders/1seI3cR4vWnbsJ3kWray9bDZo3_Sb-pp1?usp=sharing" target="_blank">Link</a></h3>
+    <div class="data" style="background-color: #d9d9ff; padding-bottom: 5px;">
+        <h3 style="margin: 0 0 0 5px; padding-top: 20px;">Nội dung -  Bản scan phiếu phỏng vấn: <a href="https://drive.google.com/drive/folders/1seI3cR4vWnbsJ3kWray9bDZo3_Sb-pp1?usp=sharing" target="_blank">Link</a></h3>
         <ul>
             <li>
                 <a href="#" v-on:click="scrollToBottom($event,'HQ')">Đánh giá chất lượng sinh cảnh bằng mô hình Habitat Quality</a>
+                <br>
+                <a style="color:red; text-decoration: underline; font-weight: 600;" href="#" v-on:click="scrollToBottom($event,'HQsummary')">Bảng tóm tắt kết quả phỏng vấn chủ đề đánh giá chất lượng sinh cảnh (Habitat Quality)</a>
                 <ol>
                     <li>
                         <a href="#" v-on:click="scrollToBottom($event,'HQ1')">Mô tả diễn biến lớp phủ quá khứ đến nay</a>
@@ -45,6 +47,8 @@ const container = `
             </li>
             <li>
                 <a href="#" v-on:click="scrollToBottom($event,'HRA')">Đánh giá rủi ro sinh cảnh</a>
+                <br>
+                <a style="color:red; text-decoration: underline; font-weight: 600;" href="#" v-on:click="scrollToBottom($event,'HRAsummary')">Bảng tóm tắt kết quả phỏng vấn chủ đề đánh giá rủi ro sinh cảnh (Habitat risk assessment)</a>
                 <ol>
                     <li><a href="#" v-on:click="scrollToBottom($event, 'HRA1')">Mô tả khả năng phục hồi sinh cảnh RNM</a></li>
                     <li><a href="#" v-on:click="scrollToBottom($event, 'HRA2')">Mô tả hiện tượng xói lở tác động đến RNM</a></li>
@@ -53,6 +57,7 @@ const container = `
                     <li><a href="#" v-on:click="scrollToBottom($event, 'HRA5')">Mô tả hiện tượng ô nhiễm môi trường</a></li>
                     <li><a href="#" v-on:click="scrollToBottom($event, 'HRA6')">Mô tả hiện tượng khô hạn thiếu nước</a></li>
                     <li><a href="#" v-on:click="scrollToBottom($event, 'HRA7')">Mô tả hiện tượng thay đổi sử dụng dất</a></li>
+                    <li><a href="#" v-on:click="scrollToBottom($event, 'HRA8')">Bản đồ mô tả sự phân bố của các nhân tố gây rủi ro sinh cảnh</a></li>
                 </ol>
             </li>
         </ul>
