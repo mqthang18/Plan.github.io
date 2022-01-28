@@ -59,7 +59,7 @@ const container = `
                     <li><a href="#" v-on:click="scrollToBottom($event, 'HRA7')">Mô tả hiện tượng thay đổi sử dụng dất</a></li>
                     <li><a href="#" v-on:click="scrollToBottom($event, 'HRA8')">Bản đồ mô tả sự phân bố của các nhân tố gây rủi ro sinh cảnh</a></li>
                 </ol>
-            </li>
+            </li> 
         </ul>
     </div>
 `
