@@ -22,3 +22,17 @@ $(document).ready(function(){
     // Do stuff here, including _calling_ codeAddress(), but not _defining_ it!
     collapsible();
 });
+
+function Content(id, ListContent='ListContent') {
+    var el = document.getElementById(id);
+    var elLiC = document.getElementById(ListContent);
+    var state = elLiC.style.display;
+    // console.log(state)
+    if (state == "block" || state=="") {
+        elLiC.style.display = 'none';
+        el.innerHTML= "Hiện";
+    } else {
+        elLiC.style.display = 'block';
+        el.innerHTML = 'Ẩn';
+    }
+}

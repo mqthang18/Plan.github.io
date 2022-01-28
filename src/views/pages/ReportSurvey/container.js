@@ -1,6 +1,7 @@
 const container = `
-    <div class="data" style="background-color: #d9d9ff; padding-bottom: 5px;">
-        <h3 style="margin: 0 0 0 5px; padding-top: 20px;">Nội dung -  Bản scan phiếu phỏng vấn: <a href="https://drive.google.com/drive/folders/1seI3cR4vWnbsJ3kWray9bDZo3_Sb-pp1?usp=sharing" target="_blank">Link</a></h3>
+    <div style="display:flex; font-size: 26px; font-weight: 600;">Mục lục [<a id="StateContent" href="#" style="display:block;" onclick="Content(this.id)">Ẩn</a>]</h3></div>
+    <div id="ListContent" class="data" style="background-color: #d9d9ff; padding-bottom: 5px;">
+        <h3 style="margin: 0 0 0 5px; padding-top: 20px;">Nội dung -  Bản scan phiếu phỏng vấn: <a href="https://drive.google.com/drive/folders/1seI3cR4vWnbsJ3kWray9bDZo3_Sb-pp1?usp=sharing" target="_blank">Link</a> 
         <ul>
             <li>
                 <a href="#" v-on:click="scrollToBottom($event,'HQ')">Đánh giá chất lượng sinh cảnh bằng mô hình Habitat Quality</a>
