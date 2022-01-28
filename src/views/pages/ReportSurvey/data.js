@@ -192,15 +192,15 @@ const data = `
                     <ul>
                         <li>
                             <h5>Sóc Trăng</h5>
-                            <iframe loading=lazy style="width: 80%; height: 340px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVIrpQmW0JWTuRDy3CQ6S8T38-reoZRLy6SNm0Gz_Pn8eAGDE-G97rl6jGUnUoXdlcymqUGPxmz6Wp/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                            <iframe loading="lazy"  style="width: 80%; height: 340px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVIrpQmW0JWTuRDy3CQ6S8T38-reoZRLy6SNm0Gz_Pn8eAGDE-G97rl6jGUnUoXdlcymqUGPxmz6Wp/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                         </li>
                         <li>
                             <h5>Cà Mau</h5>
-                            <iframe loading=lazy style="width: 80%; height: 700px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTWgrGXor2Kkpl9b9BbOS7LJS-pVxv3XvdQk7GAWHYvw3FCz8CkD-KIkot0dfl2unbMOTvbJQGI43iw/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                            <iframe loading="lazy"  style="width: 80%; height: 700px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTWgrGXor2Kkpl9b9BbOS7LJS-pVxv3XvdQk7GAWHYvw3FCz8CkD-KIkot0dfl2unbMOTvbJQGI43iw/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                         </li>
                         <li>
                             <h5>Kiên Giang</h5>
-                            <iframe loading=lazy style="width: 80%; height: 350px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRfRWl5FLqagothETucUplXafsKacrYYtJVarJ0gffl1MvFXlkA2m7ZtkR58-pbDAl7WvM4byP2_qsy/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                            <iframe loading="lazy"  style="width: 80%; height: 350px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRfRWl5FLqagothETucUplXafsKacrYYtJVarJ0gffl1MvFXlkA2m7ZtkR58-pbDAl7WvM4byP2_qsy/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                         </li>
                     </ul>
                 </div>
@@ -211,15 +211,15 @@ const data = `
                     <ul>
                         <li>
                             <h5>Sóc Trăng</h5>
-                            <iframe loading=lazy style="width: 80%; height: 400px" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVIrpQmW0JWTuRDy3CQ6S8T38-reoZRLy6SNm0Gz_Pn8eAGDE-G97rl6jGUnUoXdlcymqUGPxmz6Wp/pubhtml?gid=1850366704&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                            <iframe loading="lazy"  style="width: 80%; height: 400px" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVIrpQmW0JWTuRDy3CQ6S8T38-reoZRLy6SNm0Gz_Pn8eAGDE-G97rl6jGUnUoXdlcymqUGPxmz6Wp/pubhtml?gid=1850366704&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                         </li>
                         <li>
                             <h5>Cà Mau</h5>
-                            <iframe loading=lazy style="width: 80%; height: 800px" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTWgrGXor2Kkpl9b9BbOS7LJS-pVxv3XvdQk7GAWHYvw3FCz8CkD-KIkot0dfl2unbMOTvbJQGI43iw/pubhtml?gid=1577499812&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                            <iframe loading="lazy"  style="width: 80%; height: 800px" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTWgrGXor2Kkpl9b9BbOS7LJS-pVxv3XvdQk7GAWHYvw3FCz8CkD-KIkot0dfl2unbMOTvbJQGI43iw/pubhtml?gid=1577499812&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                         </li>
                         <li>
                             <h5>Kiên Giang</h5>
-                            <iframe loading=lazy style="width: 80%; height: 400px" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRfRWl5FLqagothETucUplXafsKacrYYtJVarJ0gffl1MvFXlkA2m7ZtkR58-pbDAl7WvM4byP2_qsy/pubhtml?gid=1948066444&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                            <iframe loading="lazy"  style="width: 80%; height: 400px" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRfRWl5FLqagothETucUplXafsKacrYYtJVarJ0gffl1MvFXlkA2m7ZtkR58-pbDAl7WvM4byP2_qsy/pubhtml?gid=1948066444&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                         </li>
                     <ul>
                 </div>
@@ -230,15 +230,15 @@ const data = `
                     <ul>
                         <li>
                             <h5>Sóc Trăng</h5>
-                            <iframe loading=lazy style="width: 100%; height: 300px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVIrpQmW0JWTuRDy3CQ6S8T38-reoZRLy6SNm0Gz_Pn8eAGDE-G97rl6jGUnUoXdlcymqUGPxmz6Wp/pubhtml?gid=1724835467&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 300px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVIrpQmW0JWTuRDy3CQ6S8T38-reoZRLy6SNm0Gz_Pn8eAGDE-G97rl6jGUnUoXdlcymqUGPxmz6Wp/pubhtml?gid=1724835467&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                         </li>
                         <li>
                             <h5>Cà Mau</h5>
-                            <iframe loading=lazy style="width: 100%; height: 300px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTWgrGXor2Kkpl9b9BbOS7LJS-pVxv3XvdQk7GAWHYvw3FCz8CkD-KIkot0dfl2unbMOTvbJQGI43iw/pubhtml?gid=935061631&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 300px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTWgrGXor2Kkpl9b9BbOS7LJS-pVxv3XvdQk7GAWHYvw3FCz8CkD-KIkot0dfl2unbMOTvbJQGI43iw/pubhtml?gid=935061631&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                         </li>
                         <li>
                             <h5>Kiên Giang</h5>
-                            <iframe loading=lazy style="width: 100%; height: 320px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRfRWl5FLqagothETucUplXafsKacrYYtJVarJ0gffl1MvFXlkA2m7ZtkR58-pbDAl7WvM4byP2_qsy/pubhtml?gid=74912219&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 320px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRfRWl5FLqagothETucUplXafsKacrYYtJVarJ0gffl1MvFXlkA2m7ZtkR58-pbDAl7WvM4byP2_qsy/pubhtml?gid=74912219&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                         </li>
                     </ul>
                 </div>
@@ -249,15 +249,15 @@ const data = `
                     <ul>
                         <li>
                             <h5>Sóc Trăng</h5>
-                            <iframe loading=lazy style="width: 100%; height: 300px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVIrpQmW0JWTuRDy3CQ6S8T38-reoZRLy6SNm0Gz_Pn8eAGDE-G97rl6jGUnUoXdlcymqUGPxmz6Wp/pubhtml?gid=467494413&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 300px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVIrpQmW0JWTuRDy3CQ6S8T38-reoZRLy6SNm0Gz_Pn8eAGDE-G97rl6jGUnUoXdlcymqUGPxmz6Wp/pubhtml?gid=467494413&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                         </li>
                         <li>
                             <h5>Cà Mau</h5>
-                            <iframe loading=lazy style="width: 100%; height: 400px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTWgrGXor2Kkpl9b9BbOS7LJS-pVxv3XvdQk7GAWHYvw3FCz8CkD-KIkot0dfl2unbMOTvbJQGI43iw/pubhtml?gid=533168969&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 400px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTWgrGXor2Kkpl9b9BbOS7LJS-pVxv3XvdQk7GAWHYvw3FCz8CkD-KIkot0dfl2unbMOTvbJQGI43iw/pubhtml?gid=533168969&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                         </li>
                         <li>
                             <h5>Kiên Giang</h5>
-                            <iframe loading=lazy style="width: 100%; height: 400px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRfRWl5FLqagothETucUplXafsKacrYYtJVarJ0gffl1MvFXlkA2m7ZtkR58-pbDAl7WvM4byP2_qsy/pubhtml?gid=883391421&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 400px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRfRWl5FLqagothETucUplXafsKacrYYtJVarJ0gffl1MvFXlkA2m7ZtkR58-pbDAl7WvM4byP2_qsy/pubhtml?gid=883391421&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                         </li>
                     </ul>
                 </div>
@@ -298,7 +298,7 @@ const data = `
                         <li><h5>Kiên Giang</h5></li>
                     </ul>
                     <p>Dữ liệu phỏng vấn tại Hội thảo</p>
-                    <iframe loading=lazy style="width:100%; height: 300px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS5RaJXDL7WXMjAYudh72yo95c0MgXPx5Y9rnK_upZJMNhj1hA6MTrLj9lNu9yh5u2XOOxMKosD3X2m/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                    <iframe loading="lazy"  style="width:100%; height: 300px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS5RaJXDL7WXMjAYudh72yo95c0MgXPx5Y9rnK_upZJMNhj1hA6MTrLj9lNu9yh5u2XOOxMKosD3X2m/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                 </div>
             </li>
             <li id="HQ7">
@@ -318,15 +318,15 @@ const data = `
                     <ul>
                         <li>
                             <h5>Sóc Trăng</h5>
-                            <iframe loading=lazy style="width: 100%; height: 300px;" scrolling="no" src="https://drive.google.com/file/d/1av9ANqiz6Z_kNx2Uuylm047FuzRe5N7j/preview" allow="autoplay"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 300px;" scrolling="no" src="https://drive.google.com/file/d/1av9ANqiz6Z_kNx2Uuylm047FuzRe5N7j/preview" allow="autoplay"></iframe>
                         </li>
                         <li>
                             <h5>Cà Mau</h5>
-                            <iframe loading=lazy style="width: 100%; height: 300px;" scrolling="no" src="https://drive.google.com/file/d/1vrYqyfaqn4-wF1TM66BNJiBhfOSq8cVm/preview" allow="autoplay"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 300px;" scrolling="no" src="https://drive.google.com/file/d/1vrYqyfaqn4-wF1TM66BNJiBhfOSq8cVm/preview" allow="autoplay"></iframe>
                         </li>
                         <li>
                             <h5>Kiên Giang</h5>
-                            <iframe loading=lazy style="width: 100%; height: 300px;" src="https://drive.google.com/file/d/1H1iZDlLmLZPgAm9WW61cYNIgj3jwR6Nj/preview" allow="autoplay"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 300px;" src="https://drive.google.com/file/d/1H1iZDlLmLZPgAm9WW61cYNIgj3jwR6Nj/preview" allow="autoplay"></iframe>
                         </li>
                     </ul>
                 </div>
@@ -339,20 +339,20 @@ const data = `
                         <li>
                             <h5>Sóc Trăng</h5>
                             <p>Bác Nguyễn Đức Hoàng</p>
-                            <iframe loading=lazy style="width: 100%; height: 500px;" src="https://drive.google.com/file/d/1Xnc9KyqLtoIAvVDcBc0TRQjGDTP3xcSc/preview" scrolling="no" allow="autoplay"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 500px;" src="https://drive.google.com/file/d/1Xnc9KyqLtoIAvVDcBc0TRQjGDTP3xcSc/preview" scrolling="no" allow="autoplay"></iframe>
                             <p>Bác Nguyễn Trung Quốc</p>
-                            <iframe loading=lazy style="width: 100%; height: 500px;" src="https://drive.google.com/file/d/12Nfbycc9fmUiD6Vsvuj1ZA9e5_YFdb5s/preview"allow="autoplay"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 500px;" src="https://drive.google.com/file/d/12Nfbycc9fmUiD6Vsvuj1ZA9e5_YFdb5s/preview"allow="autoplay"></iframe>
                         </li>
                         <li>
                             <h5>Cà Mau</h5>
                             <p>Nguyễn Văn Sự</p>
-                            <iframe loading=lazy style="width: 100%; height: 500px;" src="https://drive.google.com/file/d/1OqTPj8sHeyBqjg4dTAn4y55Fj3Jt7ALt/preview" allow="autoplay"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 500px;" src="https://drive.google.com/file/d/1OqTPj8sHeyBqjg4dTAn4y55Fj3Jt7ALt/preview" allow="autoplay"></iframe>
                             <p>Lê Tỏa Rạng</p>
-                            <iframe loading=lazy style="width: 100%; height: 500px;" src="https://drive.google.com/file/d/1b3V7CutLLzhj34K5dkl0OgWtn3_Hx5m2/preview" allow="autoplay"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 500px;" src="https://drive.google.com/file/d/1b3V7CutLLzhj34K5dkl0OgWtn3_Hx5m2/preview" allow="autoplay"></iframe>
                         </li>
                         <li>
                             <h5>Kiên Giang</h5>
-                            <iframe loading=lazy style="width: 100%; height: 500px;" src="https://drive.google.com/file/d/1H1Q-3lg1YudKAi6aTUR4bDRuY8Vio-2v/preview" allow="autoplay"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 500px;" src="https://drive.google.com/file/d/1H1Q-3lg1YudKAi6aTUR4bDRuY8Vio-2v/preview" allow="autoplay"></iframe>
                         </li>
                     </ul>
                 </div>
@@ -363,14 +363,14 @@ const data = `
                     <ul>
                         <li>
                             <h5>Sóc Trăng</h5>
-                            <iframe loading=lazy style="width:100%;height: 500px;" src="https://drive.google.com/file/d/1KrMojDTyds46167Mho4VYeQDYkDOAe22/preview" allow="autoplay"></iframe>
+                            <iframe loading="lazy"  style="width:100%;height: 500px;" src="https://drive.google.com/file/d/1KrMojDTyds46167Mho4VYeQDYkDOAe22/preview" allow="autoplay"></iframe>
                         </li>
                         <li>
                             <h5>Cà Mau</h5>
                             <p>Lệ Tỏa Rạng</p>
-                            <iframe loading=lazy style="width:100%;height: 500px;" src="https://drive.google.com/file/d/1QvlfYSxARLAlYyEbetpU90Q9UMvG-7JR/preview" allow="autoplay"></iframe>
+                            <iframe loading="lazy"  style="width:100%;height: 500px;" src="https://drive.google.com/file/d/1QvlfYSxARLAlYyEbetpU90Q9UMvG-7JR/preview" allow="autoplay"></iframe>
                             <p>Nguyễn Văn Sự</p>
-                            <iframe loading=lazy style="width:100%;height: 500px;" src="https://drive.google.com/file/d/1pvJ7VortV93el3QNAvCc9f-TV3tcKt_k/preview" allow="autoplay"></iframe>
+                            <iframe loading="lazy"  style="width:100%;height: 500px;" src="https://drive.google.com/file/d/1pvJ7VortV93el3QNAvCc9f-TV3tcKt_k/preview" allow="autoplay"></iframe>
                         </li>
                         <li>
                             <h5>Kiên Giang</h5>
@@ -500,15 +500,15 @@ const data = `
                     <ul>
                         <li>
                             <h5>Sóc Trăng</h5>
-                            <iframe loading=lazy style="width: 100%; height: 200px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT1L1UeyGGVy095Cx4ygOyJotMiAUF36UQfhJir8kFbWC3uNV3rDgA0F30KDH9Fy6ETu5VuZA68DHzS/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 200px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT1L1UeyGGVy095Cx4ygOyJotMiAUF36UQfhJir8kFbWC3uNV3rDgA0F30KDH9Fy6ETu5VuZA68DHzS/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                         </li>
                         <li>
                             <h5>Cà Mau</h5>
-                            <iframe loading=lazy style="width: 100%; height: 200px" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS6nRYBNZNm513qNHtRKVOBdes0qFI2PLj_bGmEpvdjWJmjAIQQeXfkzlWDoR7s15wJtywgOKxOUN1s/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 200px" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS6nRYBNZNm513qNHtRKVOBdes0qFI2PLj_bGmEpvdjWJmjAIQQeXfkzlWDoR7s15wJtywgOKxOUN1s/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                         </li>
                         <li>
                             <h5>Kiên Giang</h5>
-                            <iframe loading=lazy style="width: 100%; height: 200px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSUXqWtT8Ii8K0l3I5Itftc3iFHOX6dt68oUbYdQpu87vHO5G6HhVIyCkI2AS5WrqlOUzhHHL2fHg9B/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 200px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSUXqWtT8Ii8K0l3I5Itftc3iFHOX6dt68oUbYdQpu87vHO5G6HhVIyCkI2AS5WrqlOUzhHHL2fHg9B/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                         </li>
                     </ul>
                 </div>
@@ -519,15 +519,15 @@ const data = `
                     <ul>
                         <li>
                             <h5>Sóc Trăng</h5>
-                            <iframe loading=lazy style="width: 100%; height: 300px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQI78hpkuhxMM105xTGq0WkJycH5Lk4DE7ERClcfBTsbBvi6E6MozLY9vbQAqX56xMfSbUx6jzHunqR/pubhtml?gid=1187919709&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 300px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQI78hpkuhxMM105xTGq0WkJycH5Lk4DE7ERClcfBTsbBvi6E6MozLY9vbQAqX56xMfSbUx6jzHunqR/pubhtml?gid=1187919709&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                         </li>
                         <li>
                             <h5>Cà Mau</h5>
-                            <iframe loading=lazy style="width: 100%; height: 300px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS6nRYBNZNm513qNHtRKVOBdes0qFI2PLj_bGmEpvdjWJmjAIQQeXfkzlWDoR7s15wJtywgOKxOUN1s/pubhtml?gid=1187919709&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 300px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS6nRYBNZNm513qNHtRKVOBdes0qFI2PLj_bGmEpvdjWJmjAIQQeXfkzlWDoR7s15wJtywgOKxOUN1s/pubhtml?gid=1187919709&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                         </li>
                         <li>
                             <h5>Kiên Giang</h5>
-                            <iframe loading=lazy style="width: 100%; height: 300px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSUXqWtT8Ii8K0l3I5Itftc3iFHOX6dt68oUbYdQpu87vHO5G6HhVIyCkI2AS5WrqlOUzhHHL2fHg9B/pubhtml?gid=1187919709&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 300px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSUXqWtT8Ii8K0l3I5Itftc3iFHOX6dt68oUbYdQpu87vHO5G6HhVIyCkI2AS5WrqlOUzhHHL2fHg9B/pubhtml?gid=1187919709&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                         </li>
                     </ul>
                 </div>
@@ -538,11 +538,11 @@ const data = `
                     <ul>
                         <li>
                             <h5>Sóc Trăng</h5>
-                            <iframe loading=lazy style="width: 100%; height: 320px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQI78hpkuhxMM105xTGq0WkJycH5Lk4DE7ERClcfBTsbBvi6E6MozLY9vbQAqX56xMfSbUx6jzHunqR/pubhtml?gid=1419884724&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 320px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQI78hpkuhxMM105xTGq0WkJycH5Lk4DE7ERClcfBTsbBvi6E6MozLY9vbQAqX56xMfSbUx6jzHunqR/pubhtml?gid=1419884724&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                         </li>
                         <li>
                             <h5>Cà Mau</h5>
-                            <iframe loading=lazy style="width: 100%; height: 340px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS6nRYBNZNm513qNHtRKVOBdes0qFI2PLj_bGmEpvdjWJmjAIQQeXfkzlWDoR7s15wJtywgOKxOUN1s/pubhtml?gid=1419884724&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 340px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS6nRYBNZNm513qNHtRKVOBdes0qFI2PLj_bGmEpvdjWJmjAIQQeXfkzlWDoR7s15wJtywgOKxOUN1s/pubhtml?gid=1419884724&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                         </li>
                         <li>
                             <h5>Kiên Giang</h5>
@@ -556,11 +556,11 @@ const data = `
                     <ul>
                         <li>
                             <h5>Sóc Trăng</h5>
-                            <iframe loading=lazy style="width: 100%; height: 320px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQI78hpkuhxMM105xTGq0WkJycH5Lk4DE7ERClcfBTsbBvi6E6MozLY9vbQAqX56xMfSbUx6jzHunqR/pubhtml?gid=1741263756&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 320px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQI78hpkuhxMM105xTGq0WkJycH5Lk4DE7ERClcfBTsbBvi6E6MozLY9vbQAqX56xMfSbUx6jzHunqR/pubhtml?gid=1741263756&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                         </li>
                         <li>
                             <h5>Cà Mau</h5>
-                            <iframe loading=lazy style="width: 100%; height: 320px" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS6nRYBNZNm513qNHtRKVOBdes0qFI2PLj_bGmEpvdjWJmjAIQQeXfkzlWDoR7s15wJtywgOKxOUN1s/pubhtml?gid=1741263756&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 320px" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS6nRYBNZNm513qNHtRKVOBdes0qFI2PLj_bGmEpvdjWJmjAIQQeXfkzlWDoR7s15wJtywgOKxOUN1s/pubhtml?gid=1741263756&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                         </li>
                         <li>
                             <h5>Kiên Giang</h5>
@@ -574,11 +574,11 @@ const data = `
                     <ul>
                         <li>
                             <h5>Sóc Trăng</h5>
-                            <iframe loading=lazy style="width: 100%; height: 320px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQI78hpkuhxMM105xTGq0WkJycH5Lk4DE7ERClcfBTsbBvi6E6MozLY9vbQAqX56xMfSbUx6jzHunqR/pubhtml?gid=1563434722&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 320px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQI78hpkuhxMM105xTGq0WkJycH5Lk4DE7ERClcfBTsbBvi6E6MozLY9vbQAqX56xMfSbUx6jzHunqR/pubhtml?gid=1563434722&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                         </li>
                         <li>
                             <h5>Cà Mau</h5>
-                            <iframe loading=lazy style="width: 100%; height: 320px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS6nRYBNZNm513qNHtRKVOBdes0qFI2PLj_bGmEpvdjWJmjAIQQeXfkzlWDoR7s15wJtywgOKxOUN1s/pubhtml?gid=1563434722&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 320px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS6nRYBNZNm513qNHtRKVOBdes0qFI2PLj_bGmEpvdjWJmjAIQQeXfkzlWDoR7s15wJtywgOKxOUN1s/pubhtml?gid=1563434722&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                         </li>
                         <li>
                             <h5>Kiên Giang</h5>
@@ -592,11 +592,11 @@ const data = `
                     <ul>
                         <li>
                             <h5>Sóc Trăng</h5>
-                            <iframe loading=lazy style="width: 100%; height: 320px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQI78hpkuhxMM105xTGq0WkJycH5Lk4DE7ERClcfBTsbBvi6E6MozLY9vbQAqX56xMfSbUx6jzHunqR/pubhtml?gid=850451087&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 320px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQI78hpkuhxMM105xTGq0WkJycH5Lk4DE7ERClcfBTsbBvi6E6MozLY9vbQAqX56xMfSbUx6jzHunqR/pubhtml?gid=850451087&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                         </li>
                         <li>
                             <h5>Cà Mau</h5>
-                            <iframe loading=lazy style="width: 100%; height: 320px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS6nRYBNZNm513qNHtRKVOBdes0qFI2PLj_bGmEpvdjWJmjAIQQeXfkzlWDoR7s15wJtywgOKxOUN1s/pubhtml?gid=850451087&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 320px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS6nRYBNZNm513qNHtRKVOBdes0qFI2PLj_bGmEpvdjWJmjAIQQeXfkzlWDoR7s15wJtywgOKxOUN1s/pubhtml?gid=850451087&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                         </li>
                         <li>
                             <h5>Kiên Giang</h5>
@@ -610,11 +610,11 @@ const data = `
                     <ul>
                         <li>
                             <h5>Sóc Trăng</h5>
-                            <iframe loading=lazy style="width: 100%; height: 320px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQI78hpkuhxMM105xTGq0WkJycH5Lk4DE7ERClcfBTsbBvi6E6MozLY9vbQAqX56xMfSbUx6jzHunqR/pubhtml?gid=1493008024&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 320px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQI78hpkuhxMM105xTGq0WkJycH5Lk4DE7ERClcfBTsbBvi6E6MozLY9vbQAqX56xMfSbUx6jzHunqR/pubhtml?gid=1493008024&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                         </li>
                         <li>
                             <h5>Cà Mau</h5>
-                            <iframe loading=lazy style="width: 100%; height: 320px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS6nRYBNZNm513qNHtRKVOBdes0qFI2PLj_bGmEpvdjWJmjAIQQeXfkzlWDoR7s15wJtywgOKxOUN1s/pubhtml?gid=1493008024&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 320px;" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS6nRYBNZNm513qNHtRKVOBdes0qFI2PLj_bGmEpvdjWJmjAIQQeXfkzlWDoR7s15wJtywgOKxOUN1s/pubhtml?gid=1493008024&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                         </li>
                         <li>
                             <h5>Kiên Giang</h5>
@@ -628,15 +628,15 @@ const data = `
                     <ul>
                         <li>
                             <h5>Sóc Trăng</h5>
-                            <iframe loading=lazy style="width: 100%; height: 600px;" src="https://drive.google.com/file/d/1nigNX5_Y-Ck7XRwAwgmnhALlw71qkLF8/preview" allow="autoplay"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 600px;" src="https://drive.google.com/file/d/1nigNX5_Y-Ck7XRwAwgmnhALlw71qkLF8/preview" allow="autoplay"></iframe>
                         </li>
                         <li>
                             <h5>Cà Mau</h5>
-                            <iframe loading=lazy style="width: 100%; height: 600px;" src="https://drive.google.com/file/d/1PTvQ1nkpF0DTKntbIIF73hBDVXdIwUpr/preview" allow="autoplay"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 600px;" src="https://drive.google.com/file/d/1PTvQ1nkpF0DTKntbIIF73hBDVXdIwUpr/preview" allow="autoplay"></iframe>
                         </li>
                         <li>
                             <h5>Kiên Giang</h5>
-                            <iframe loading=lazy style="width: 100%; height: 600px;" src="https://drive.google.com/file/d/181d4iu0qfxIz97Z51U2jpxs6jgoUJBXW/preview" allow="autoplay"></iframe>
+                            <iframe loading="lazy"  style="width: 100%; height: 600px;" src="https://drive.google.com/file/d/181d4iu0qfxIz97Z51U2jpxs6jgoUJBXW/preview" allow="autoplay"></iframe>
                         </li>
                     </ul>
                 </div>
