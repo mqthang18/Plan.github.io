@@ -376,9 +376,9 @@
     }
 }
 
-// Create function to read data from google spreadsheet 
+// Create function to enter data into google spreadsheet 
 {
-    function SUbmitGSS() {
+    function SubmitGSS() {
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwFI1zlY_1g2M3ZSFNYuE23m8FlIxaYgg6LQC5fJvZRyJ6wMWEUD0R00n7IDm8FjyLrLw/exec'
         const form = document.forms['submit-to-google-sheet']
         // console.log(form);
