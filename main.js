@@ -19,6 +19,6 @@
   // console.log('Error');
   // console.log(err);
   // window.location.href = url;
-  alert("Load thất bại vui lòng bấm F5 để load lại page!")
+  // alert("Load thất bại vui lòng bấm F5 để load lại page!")
 }
   
