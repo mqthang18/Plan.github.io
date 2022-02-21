@@ -35,6 +35,7 @@ const data = `
     </p> 
     <div id="Minibuoys">
         <h3 style="text-align:center;">Khảo sát thiết bị Minibuoys</h3>
+        <p align="center"><iframe style="width: 60vw; height: 60vh" src="https://www.youtube.com/embed/w-k7y2EZCTg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
         <div id="SocTrang_Minibuoys">
             <h4>Sóc Trăng</h4>
             <ul>
