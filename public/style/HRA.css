@@ -2,6 +2,10 @@
 :root {
     --w--leftcol: 45rem;
 }
+
+* {
+    box-sizing: border-box;
+}
 .html {
     font-size: 62.5%;
 }
