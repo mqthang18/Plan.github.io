@@ -39,16 +39,16 @@ const data = `
             <h4>Sóc Trăng</h4>
             <ul>
                 <li>Setup thiết bị: 
-                    <ol>
+                    <ul>
                         <li>Thời gian bắt đầu ghi: 16/02/2022 00:00:00</li>
                         <li>t1: 1s</li>
-                    </ol>
+                    </ul>
                 </li>
                 <li>Tình trạng thiết bị: 
-                    <ol>
+                    <ul>
                         <li>Pin đầy 4.05V</li>
                         <li>Thời gian ghi kéo dài tối thiểu 8 ngày theo lý thuyết trong điều kiện triều mạnh, sensor phải liên tục tính toán. Thời gian ghi có thể kéo dài khoảng 1 tháng nếu các giá trị ít lẻ.</li>
-                    </ol>
+                    </ul>
                 </li>
                 <li>Thực tế khảo sát lắp đặt thiết bị và thu mẫu đất, nước
                     <ul>
@@ -61,12 +61,17 @@ const data = `
         <div id="KienGiang_Minibuoys">
             <h4>Kiên Giang</h4>
             <ul>
-                <li>Setup thiết bị: </li>
+                <li>Setup thiết bị: 
+                    <ul>
+                        <li>Thời gian bắt đầu ghi: 10/02/2022 12:00</li>
+                        <li>t1: 1s</li>
+                    </ul>
+                </li>
                 <li>Tình trạng thiết bị: 
-                    <ol>
+                    <ul>
                         <li>Đang trong quá trình ghi nhận dữ liệu, có một số sensor cắm không phù hợp vị trí được chỉ định từ anh Caid: <a href="https://www.google.com/maps/d/u/0/edit?mid=16Oa6tPKXuIR-bsbKRGXmZwaSrLc1L2jR&usp=sharing" target="_blank">Link</a>.</li>
                         <li>Thời gian ghi kéo dài tối thiểu 8 ngày trong điều kiện triều mạnh, sensor phải liên tục tính toán</li>
-                    </ol>
+                    </ul>
                 </li>
                 <li>Thực tế khảo sát
                     <ul>
@@ -80,16 +85,16 @@ const data = `
             <h4>Cà Mau</h4>
             <ul>
                 <li>Setup thiết bị: 
-                    <ol>
+                    <ul>
                         <li>Thời gian bắt đầu ghi: 15/01/2022 00:00:00</li>
                         <li>t1: 1s</li>
-                    </ol>
+                    </ul>
                 </li>
                 <li>Tình trạng thiết bị hiện tại: 
-                    <ol>
+                    <ul>
                         <li>Đã có dữ liệu sensor số 8 kéo dài 16 ngày (15/01/2022 00:00 - 01/02/2022 16:19:46), nghi ngờ do sensor không đủ memory (bộ nhớ Ram) để tiếp tục ghi dữ liệu</li>
                         <li>Các thiết bị khác chưa lấy được</li>
-                    </ol>
+                    </ul>
                 </li>
                 <li>Thực tế khảo sát</li>
             </ul>
