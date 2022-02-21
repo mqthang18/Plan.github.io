@@ -54,6 +54,7 @@ const data = `
                     <ul>
                         <li>Set up thiết bị: <a href="https://drive.google.com/drive/folders/1ILoA_-QRJTv4S4AjRUI5VUZPDlYeRntW?usp=sharing" target="_blank">Link</a></li>
                         <li>Tổng hợp ảnh thực địa Sóc Trăng: <a href="https://drive.google.com/drive/folders/1-csQEnVZsXN9xUUL413RANVwatUQeta9?usp=sharing" target="_blank">Link</a></li>
+                        <li>Đã thu mẫu nước và mẫu đất</li>
                     </ul>
                 </li>
             </ul>
@@ -77,6 +78,7 @@ const data = `
                     <ul>
                         <li>Setup thiết bị: <a href="https://drive.google.com/drive/folders/1JH0Sid4D9Lxmvv33vRn1z0VpK54p5Vkr?usp=sharing" target="_blank">Link</a></li>
                         <li>Tổng hợp thực địa Kiên giang: <a href="https://drive.google.com/drive/folders/1QDEbAVQf5fe_aUPdehQW8E61GYD3hpjU?usp=sharing" target="_blank">Link</a></li>
+                        <li>Đã thu mẫu nước và mẫu đất</li>
                     </ul>               
                 </li>
             </ul>
@@ -96,7 +98,11 @@ const data = `
                         <li>Các thiết bị khác chưa lấy được</li>
                     </ul>
                 </li>
-                <li>Thực tế khảo sát</li>
+                <li>Thực tế khảo sát
+                    <ul>
+                        <li>Đã thu mẫu nước và mẫu đất</li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
