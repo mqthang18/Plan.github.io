@@ -156,6 +156,15 @@ footer > div {
     height: 40rem;
 }
 
+#ListContent {
+    background-color:#dcdcf7; 
+    height: fit-content;
+    width: max-content;
+}
+
+#ListContent > div {
+    padding: .5vw 2vw;
+}
 /* ====================== */
 @media screen and (max-width: 750px) {
     .container, .data-wrapper {
@@ -205,5 +214,14 @@ footer > div {
     #ResultHRA .DemoHRA > p > img {
         max-width: 100%; 
         height: 20rem;
+    }
+
+    #ListContent {
+        width: 100vw;
+        max-width: 100%;
+    }
+    #ListContent > div {
+        width: 100%;
+        padding: .5vw 0vw;
     }
 }
