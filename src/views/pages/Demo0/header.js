@@ -1,0 +1,1 @@
+const header = `<h3 style="text-align: center;">Xây dựng ManuScript và kết quả demo 2 module HQ và HRA</h3>`; 
