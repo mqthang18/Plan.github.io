@@ -145,22 +145,15 @@ footer > div {
 }
 
 /* Format for Demo0 */
-#ResultHQ  #HQST > div > img {
-    max-width: 50%;
-    height: 40rem;
-    display: flex;
+#ResultHQ  .DemoHQ > div > img {
+    width: 48%;
+    height: 25rem;
 }
 
-#ResultHQ #HQCM > div > img {
-    max-width: 50%;
-    height: 40rem;
-    display: flex;
-}
 
-#ResultHQ #HQKG > div > img {
-    max-width: 50%;
+#ResultHRA .DemoHRA > p > img {
+    max-width: 80%; 
     height: 40rem;
-    display: flex;
 }
 
 /* ====================== */
@@ -199,34 +192,18 @@ footer > div {
         margin-right: 0;
     }
 
-
-    #ResultHQ  #HQST > div {
+    #ResultHQ > .content > .DemoHQ > div {
         flex-direction: column;
     }
 
-    #ResultHQ #HQCM > div {
-        flex-direction: column;
+    #ResultHQ > .content > .DemoHQ > div > img {
+        width: 100%;
+        height: 20rem;
+        display: flex;
     }
 
-    #ResultHQ #HQKG > div {
-        flex-direction: column;
-    }
-
-    #ResultHQ  #HQST > div > img {
-        max-width: 100%;
+    #ResultHRA .DemoHRA > p > img {
+        max-width: 100%; 
         height: 20rem;
-        display: flex;
-    }
-    
-    #ResultHQ #HQCM > div > img {
-        max-width: 100%;
-        height: 20rem;
-        display: flex;
-    }
-    
-    #ResultHQ #HQKG > div > img {
-        max-width: 100%;
-        height: 20rem;
-        display: flex;
     }
 }

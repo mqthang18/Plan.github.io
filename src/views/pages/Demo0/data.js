@@ -2,7 +2,7 @@ const data = `
     <div id="ResultHQ">
         <button id="collapsible" class="collapsible" type="button" style="text-align: left; text-decoration: underline;">1. Kết quả demo mô hình đánh giá chất lượng sinh cảnh - HQ</button>
         <div id="content" class="content" style="width: 100vw; max-width: 100%">
-            <div id="HQST">
+            <div id="HQST" class="DemoHQ">
                 <h4>Chất lượng sinh cảnh tại khu vực Sóc Trăng</h4>
                 <div>
                     <img src="https://drive.google.com/uc?export=view&id=17X4WEeteQv3MiSX2OGFY2rkpYSyzF7xs">
@@ -10,7 +10,7 @@ const data = `
                 </div>
             </div>
             <hr>
-            <div id="HQCM">
+            <div id="HQCM" class="DemoHQ">
                 <h4>Chất lượng sinh cảnh tại khu vực Cà Mau</h4>
                 <div>
                     <img src="https://drive.google.com/uc?export=view&id=18gi9PceJFiPLIaX126DNI2pXvhclaCEM">
@@ -18,7 +18,7 @@ const data = `
                 </div>
             </div>
             <hr>
-            <div id="HQKG">
+            <div id="HQKG" class="DemoHQ">
                 <h4>Chất lượng sinh cảnh tại khu vực Kiên Giang</h4>
                 <div>
                     <img src="https://drive.google.com/uc?export=view&id=17a6XxBb65J0Cp71vRv55Vr_wL_mA3wuz">
@@ -30,25 +30,25 @@ const data = `
     <div id="ResultHRA">
         <button id="collapsible" class="collapsible" type="button" style="text-align: left; text-decoration: underline;">2. Kết quả demo mô hình đánh giá rủi ro sinh cảnh - HRA</button>
         <div id="content" class="content" style="width: 100vw; max-width: 100%">
-            <div id="HRAST">
+            <div id="HRAST" class="DemoHRA">
                 <h4>Rủi ro sinh cảnh tại khu vực Sóc Trăng</h4>
                 <p style="text-align: center;">
-                    <img style="max-width: 80%; height: 40rem;" src="https://drive.google.com/uc?export=view&id=1IN9dizg8v_dwhKfvcXC5HtpdSuzdMLIn">
+                    <img src="https://drive.google.com/uc?export=view&id=1IN9dizg8v_dwhKfvcXC5HtpdSuzdMLIn">
                 </p>
             </div>
             <hr>
-            <div id="HRACM">
+            <div id="HRACM" class="DemoHRA">
                 <h4>Rủi ro sinh cảnh tại khu vực Cà Mau</h4>
                 
                 <p style="text-align: center;">
-                    <img style="max-width: 80%; height: 40rem;" src="https://drive.google.com/uc?export=view&id=1o6i_aHUd_MHTSCOXGx5VZ6uNj1hIORGm">
+                    <img src="https://drive.google.com/uc?export=view&id=1o6i_aHUd_MHTSCOXGx5VZ6uNj1hIORGm">
                 </p>
             </div>
             <hr>
-            <div id="HRAKG">
+            <div id="HRAKG" class="DemoHRA">
                 <h4>Rủi ro sinh cảnh tại khu vực Kiên Giang</h4>
                 <p style="text-align: center;">
-                    <img style="max-width: 80%; height: 40rem;" src="https://drive.google.com/uc?export=view&id=1_WF8xeCQCYQpbuwEbllFUlF2a5whN7fS">
+                    <img src="https://drive.google.com/uc?export=view&id=1_WF8xeCQCYQpbuwEbllFUlF2a5whN7fS">
                 </p>
             </div>
         </div>
