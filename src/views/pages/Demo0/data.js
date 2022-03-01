@@ -121,7 +121,7 @@ const data = `
     <div id="ManuscriptHRA">
         <button id="collapsible" class="collapsible" style="text-decoration: underline;">4. Manuscript HRA - đánh giá rủi ro sinh cảnh</button>
         <div id="content" class="content" style="width: 100vw; max-width: 100%;">
-            <p><a href="https://docs.google.com/document/d/1VP0QwzasDQFTGPR-S4UMiPTgLV6_e2-f/edit?usp=sharing&ouid=103377131320564328842&rtpof=true&sd=true" target="_blank">Link manuscript đánh giá rủi ro sinh cảnh</a></p>
+            <p><a href="https://docs.google.com/document/d/11DWifpJaLBWrLeh8Ahu9iFuKGsZVfz0H/edit?usp=sharing&ouid=103377131320564328842&rtpof=true&sd=true" target="_blank">Link manuscript đánh giá rủi ro sinh cảnh</a></p>
             <p style="text-align: center;"><iframe style="width: 90vw; height: 80vh;" src="https://docs.google.com/document/d/e/2PACX-1vQdyuhRc5L85h1sKIZOrmeEg2-dsoLn2V6y3poYcoNkZogJK0Xw-Q2K-sVywqhkHg/pub?embedded=true"></iframe></p>
         </div>
     </div>
