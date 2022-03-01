@@ -1,4 +1,5 @@
 const data = `
+    <h3><a href="https://drive.google.com/drive/folders/1yP97XL9kTRBq7P8jkHZxDz5vF4pK2E0W?usp=sharing" target="_blank">Link thư mục chứa file xử lý số liệu</a></h3>
     <div id="ResultHQ">
         <button id="collapsible" class="collapsible" type="button" style="text-align: left; text-decoration: underline;">1. Kết quả demo mô hình đánh giá chất lượng sinh cảnh - HQ</button>
         <div id="content" class="content" style="width: 100vw; max-width: 100%">
@@ -8,6 +9,16 @@ const data = `
                     <img src="https://drive.google.com/uc?export=view&id=17X4WEeteQv3MiSX2OGFY2rkpYSyzF7xs">
                     <img src="https://drive.google.com/uc?export=view&id=1U0mn1rjJqk5OQmWTHZvVTT0LbxfIFCqT">
                 </div>
+                <ul>
+                    <li>Bảng thông tin các tác nhân đe dọa chất lượng sinh cảnh<br>
+                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ9Z568zV1aNgnVQKzHP8-4gD-ZCe2-Af9tAj52KioBa9hw0vIg3_RreDM0yj37FxIjj3hkH_mdTyWJ/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" style="width: 90vw; height: 18rem;" scrolling="no"></iframe>
+                    
+                    </li>
+                    <li>Bảng thông tin các mức độ nhạy của sinh cảnh
+                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ6OF1Z9SIj3wF1rKgB38W7a8gp6afPW1GvrFYX9CAWHlhxGJ41fKsrky3kfQY15Z3x7juOM2ow3mkb/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" style="width: 90vw; height: 22rem;" scrolling="no"></iframe>
+                    </li>
+                </ul>
+                
             </div>
             <hr>
             <div id="HQCM" class="DemoHQ">
@@ -16,6 +27,15 @@ const data = `
                     <img src="https://drive.google.com/uc?export=view&id=18gi9PceJFiPLIaX126DNI2pXvhclaCEM">
                     <img src="https://drive.google.com/uc?export=view&id=12W3jIB2nM20-SJXDFZUvKH64f4ppvZLb">
                 </div>
+                <ul>
+                    <li>Bảng thông tin các nhân tố đe dọa
+                    <br>
+                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS__pfhZtlFo5a7Spp-CcvjUptzuJ47T_SH8kWbMEdU94vInXiCUzSyTTta3soh5FdofEbfTYpVLrHL/pubhtml?widget=true&amp;headers=false" scrolling="no" style="width: 90%; height: 18rem;"></iframe>
+                    </li>
+                    <li>Bảng thông tin mức độ nhạy của sinh cảnh <br>
+                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR-CsF0-Zb9LnaZzZ-VPWaT6zEnbNZrWZ2cIplOhrgzRKiOP7EKPD-NaqzAVLIlKAML-SodEFTSATJd/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" scrolling="no" style="width: 90%; height: 22rem;"></iframe>
+                    </li>
+                </ul>
             </div>
             <hr>
             <div id="HQKG" class="DemoHQ">
@@ -24,6 +44,15 @@ const data = `
                     <img src="https://drive.google.com/uc?export=view&id=17a6XxBb65J0Cp71vRv55Vr_wL_mA3wuz">
                     <img src="https://drive.google.com/uc?export=view&id=1NGIe5IupMXiXiwIOMjgcTH8WcmVUl2Ho">
                 </div>
+                <ul>
+                    <li>Bảng thông tin các nhân tố đe dọa chất lượng sinh cảnh <br>
+                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSErFhamAZYMBGs-8-7Zi1VNOSB52HvMxC2jW_igUu4N72VdeIK5LcQDCcx-gR8V21dz_h35Ovg2qKh/pubhtml?widget=true&amp;headers=false" style="width: 90vw; height: 18rem;" scrolling="no"></iframe>
+                    </li>
+                    <li>Bảng thông tin các mức độ nhạy của sinh cảnh <br>       
+                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR7FlPTi2LXCgAb-ylj3AUhZYNJ0QncToX6ZqpRcH4FPIjIcUwrqGgYO_x0yiIkdq-8EBigyxPJBqVB/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" style="width: 90vw; height: 22rem;" scrolling="no"></iframe>            
+                    </li>
+                </ul>
+
             </div>
         </div>
     </div>
