@@ -57,6 +57,8 @@ const data = `
             </div>
         </div>
     </div>
+
+
     <div id="ResultHRA">
         <button id="collapsible" class="collapsible" type="button" style="text-align: left; text-decoration: underline;">2. Kết quả demo mô hình đánh giá rủi ro sinh cảnh - HRA</button>
         <div id="content" class="content" style="width: 100vw; max-width: 100%">
@@ -65,6 +67,16 @@ const data = `
                 <p style="text-align: center;">
                     <img src="https://drive.google.com/uc?export=view&id=1IN9dizg8v_dwhKfvcXC5HtpdSuzdMLIn">
                 </p>
+                <ul>
+                    <li>
+                        Bảng thông tin nhân tố sinh cảnh <br>
+                        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ-VU76Yk58rM3sA_kj1TpAlf0OA0COSfUAYTb2EIAlDJb9FjhMS7Myo_mhbj6gWL6dl2xS5vl1oC23/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" style="width: 90%; height: 16rem;" scrolling="no"></iframe>
+                    </li>
+                    <li>
+                        Bảng tiêu chí đánh giá <br>
+                        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS5H1tz7pRskU0XAIRBL_s9reSG8M240GxabVHAmvykiit4ug-neD_EyLV5n07H3uAR4yxrSSfwd36q/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" style="width: 90%; height: 20rem;" scrolling="no"></iframe>
+                    </li>
+                </ul>
             </div>
             <hr>
             <div id="HRACM" class="DemoHRA">
@@ -73,6 +85,14 @@ const data = `
                 <p style="text-align: center;">
                     <img src="https://drive.google.com/uc?export=view&id=1o6i_aHUd_MHTSCOXGx5VZ6uNj1hIORGm">
                 </p>
+                <ul>
+                    <li>Bảng thông tin nhân tố sinh cảnh<br>
+                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRKz7QfkonMCTpdOelIBiWByiKuUtAlA6Zb6lZ1ewauH8f5cJypUAHCyC1DsRjwykeoSj4tDGnPEWM8/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" scrolling="no" style="width: 90vw; height: 12rem;"></iframe>
+                    </li>
+                    <li>Bảng tiêu chí đánh giá <br>
+                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSeXPqQlLrew6BPjGsrUO0JHYXM8ON3o_6ky-eBRFgKrnOavri4AyDEUE3dOBdScYViDu1nogkFZMRM/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" scrolling="no" style="width: 90vw; height: 20rem;"></iframe>
+                    </li>
+                </ul>
             </div>
             <hr>
             <div id="HRAKG" class="DemoHRA">
@@ -80,6 +100,14 @@ const data = `
                 <p style="text-align: center;">
                     <img src="https://drive.google.com/uc?export=view&id=1_WF8xeCQCYQpbuwEbllFUlF2a5whN7fS">
                 </p>
+                <ul>
+                    <li>Bảng thông tin nhân tố sinh cảnh<br>
+                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVwZpRNmYfDhxG1Gr634ykTwfHs0WV-kPhkk7fvQyipaGiGunhuQhg45oiQks2txkBSPAwHbQpFJYL/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" scrolling="no" style="width: 90%; height: 14rem;"></iframe>
+                    </li>
+                    <li>Bảng tiêu chí đánh giá<br>
+                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR28l9Fo-EVSmVVEeiOlL1Oq_vElv3_Lu7e6QbvTknSEn8ieaRBhvE0gmO7nREmTuLthVkB0323yNlB/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" scrolling="no" style="width: 90%; height: 20rem;"></iframe>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
