@@ -1,5 +1,6 @@
 const data = `
     <h3><a href="https://drive.google.com/drive/folders/1yP97XL9kTRBq7P8jkHZxDz5vF4pK2E0W?usp=sharing" target="_blank">Link thư mục chứa file xử lý số liệu</a></h3>
+    <p>Note: Kết quả được demo dưới đây được chạy dựa trên dữ liệu phỏng vấn và ảnh vệ tinh có độ phân giải 10m năm 2017</p>
     <div id="ResultHQ">
         <button id="collapsible" class="collapsible" type="button" style="text-align: left; text-decoration: underline;">1. Kết quả demo mô hình đánh giá chất lượng sinh cảnh - HQ</button>
         <div id="content" class="content" style="width: 100vw; max-width: 100%">
