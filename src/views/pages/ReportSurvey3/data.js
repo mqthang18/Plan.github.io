@@ -236,7 +236,7 @@ var data = `
                             <td>F7</td>
                             <td>Biến đổi khí hậu (Nước biển dâng, xâm nhập mặn)</td>
                             <td>90000</td>
-                            <td>9</td>
+                            <td>90</td>
                             <td><a href="https://drive.google.com/file/d/1mCkyMjJmNzxbyQGUdDr2rIjcmP1Zt7XG/preview">Link</a></td>
                         </tr>
                         <tr>
