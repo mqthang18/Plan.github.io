@@ -116,9 +116,9 @@ overflow: auto;
 }
 
 footer {
-    margin-top: 100px;
-    padding-bottom: 20px;
-    min-height: 200px;
+    /* margin-top: 100px; */
+    /* padding-bottom: 20px; */
+    min-height: 20vh;
     background: rgb(126, 0, 138);
     position: relative;
 }
@@ -156,14 +156,22 @@ footer > div {
     height: 40rem;
 }
 
+.header {
+    min-height: 5vh;
+}
+
 #ListContent {
     background-color:#dcdcf7; 
-    height: fit-content;
+    min-height: 10vh;
     width: max-content;
 }
 
 #ListContent > div {
-    padding: .5vw 2vw;
+    padding: .5vh 2vw;
+}
+
+#Wrapper {
+    min-height: 45vh;
 }
 /* ====================== */
 @media screen and (max-width: 750px) {
