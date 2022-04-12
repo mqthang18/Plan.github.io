@@ -12,17 +12,17 @@ var data = `
                     <tr>
                         <td id="Device_ST">Sóc Trăng</td>
                         <td>8/9</td>
-                        <td></td>
+                        <td><a href="https://drive.google.com/file/d/1Uqww6NQCLnGs5TrjbW8BWbRGk1daYfny/preview" target="_blank">Link</a></td>
                     </tr>
                     <tr>
                         <td id="Device_CM">Cà Mau</td>
                         <td>7/9</td>
-                        <td></td>
+                        <td><a href="https://drive.google.com/file/d/1BIH2PAFlqXId5gMkvwDHKy2R6Z9YF5MR/preview" target="_blank">Link</a></td>
                     </tr>
                     <tr>
                         <td id="Device_KG">Kiên Giang</td>
                         <td>9/9</td>
-                        <td></td>
+                        <td><a href="https://drive.google.com/file/d/1Z-b_xpKHeNkBxgleiVbLAQtUyAXe-jFU/preview" target="_blank">Link</a></td>
                     </tr>
                 </table>
             </div>
