@@ -1,5 +1,8 @@
 var data = `
     <div id="Wrapper">
+
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1qsFYDB8dqH-Vi2au_bpNTXLbLG3uVF80&ehbc=2E312F" width="640" height="480"></iframe>
+
         <table>
             <tr>
                 <th>ID</th>
