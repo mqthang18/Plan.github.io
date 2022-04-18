@@ -65,13 +65,15 @@ var data = `
                     <tr>
                         <td>STT</td>
                         <td>Tác giả</td>
+                        <td>Nhân tố</td>
                         <td>Link</td>
                     </tr>
                     <tr>
                         <td>1</td>
                         <td>Trần Bá Hoàng</td>
+                        <td>Xói mòn sạc lở</td>
                         <td>
-                        <a href="https://vjol.info.vn/index.php/vawr/article/view/42074/33886">Link</a>
+                        <a target="_blank" href="https://vjol.info.vn/index.php/vawr/article/view/42074/33886">Link</a>
                         </td>
                     </tr>
                 </table>
