@@ -191,7 +191,7 @@ var data = `
                 <td>CM09</td>
                 <td>Ca Mau</td>
                 <td>Bình thường</td>
-                <td>15/01/2022 0:00</td>
+                <td>17/01/2022 0:00</td>
                 <td>24</td>
                 <td>8.63716 104.71165</td>
                 <td><a target="_blank" href="https://drive.google.com/file/d/16ZpTNyRlpgkw4hIIgYe6cgbRl8bbgH_n/view">Download</a></td>
